@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Next Chapter – Plan your retirement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f4f6;--surface:#fff;--ink:#0a1f5c;--muted:#4a5878;--brand:#1f5a99;--brand-ink:#fff;--accent:#6ddba2;--line:#cfd6e0;--good:#1b7a46;--bad:#b3392f;--bar:#173b5e;--hero:#b5bf3d;--hero-ink:#0a1f5c;--navybtn:#0a1f5c;--fs:20px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1630;--surface:#12234a;--ink:#eef3ff;--muted:#aab8d6;--brand:#7fb4f0;--brand-ink:#08183a;--line:#2b3f6b;--good:#5fd392;--bad:#ff8f84;--bar:#0a1a33;--hero:#5f661c;--hero-ink:#fff;--navybtn:#0a1a33}}
+:root[data-theme="dark"]{--bg:#0b1630;--surface:#12234a;--ink:#eef3ff;--muted:#aab8d6;--brand:#7fb4f0;--brand-ink:#08183a;--line:#2b3f6b;--good:#5fd392;--bad:#ff8f84;--bar:#0a1a33;--hero:#5f661c;--hero-ink:#fff;--navybtn:#0a1a33}
+html{scroll-padding-top:env(safe-area-inset-top,0px);font-size:var(--fs)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.55}
+a{color:var(--brand)}
+:focus-visible{outline:4px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:70rem;margin:0 auto;padding:0 1.2rem}
+.util{background:var(--bar);color:#fff}
+.util .wrap{display:flex;justify-content:space-between;align-items:stretch;gap:.5rem;flex-wrap:wrap}
+.util .l,.util .r{display:flex;align-items:stretch;flex-wrap:wrap}
+.util a,.util button{font:inherit;font-size:.85rem;color:#fff;text-decoration:none;background:none;border:0;padding:.7rem .9rem;cursor:pointer;display:flex;align-items:center;min-height:2.8rem}
+.util a:hover,.util button:hover{background:rgba(255,255,255,.12)}
+.util a.on{background:#2a5f9e}
+.util .sep{border-left:1px solid rgba(255,255,255,.35);margin:.6rem .3rem}
+header{background:var(--surface);box-shadow:0 2px 6px rgba(10,31,92,.12);position:relative;z-index:2}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1rem;padding-bottom:1rem}
+.logo{font-weight:700;font-size:1.7rem;display:flex;align-items:center;gap:.5rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.logo svg{width:2.2rem;height:2.2rem}
+nav{display:flex;gap:.2rem;flex-wrap:wrap;align-items:center}
+nav a{color:var(--ink);font-weight:700;text-decoration:none;padding:.6rem .9rem;border-radius:.5rem;min-height:3rem;display:flex;align-items:center}
+nav a:hover{background:var(--bg)}
+.btn{font:inherit;font-weight:700;background:var(--brand);color:var(--brand-ink);border:2px solid var(--brand);min-height:3rem;padding:.6rem 1.2rem;border-radius:.3rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:.5rem}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--brand)}
+.btn.mint{background:#6ddba2;border-color:#6ddba2;color:#0a1f5c;padding:.9rem 1.4rem}
+.btn.dark{background:var(--navybtn);border-color:#fff;color:#fff;padding:1rem 1.5rem}
+.hero{position:relative;background:var(--hero);color:var(--hero-ink);overflow:hidden}
+.hero .wrap{position:relative;z-index:1;padding-top:4rem;padding-bottom:9rem}
+.hero h1{font-size:clamp(2.3rem,5.6vw,3.9rem);line-height:1.08;margin:0 0 1.4rem;max-width:13em;color:var(--hero-ink)}
+.hero p{font-size:1.25rem;max-width:30rem;margin:0 0 2rem}
+.hero .stripe,.hero .art{position:absolute;top:0;right:0;bottom:0}
+.hero .stripe{width:56%;background:#4f9a3c;clip-path:polygon(24% 0,100% 0,100% 100%,-3% 100%)}
+.hero .art{width:54%;clip-path:polygon(28% 0,100% 0,100% 100%,0 100%)}
+.hero .art svg{width:100%;height:100%;display:block}
+.hero::before,.hero::after{content:"";position:absolute;bottom:0;z-index:1;background:linear-gradient(90deg,#2a5f9e,#0b2a6b)}
+.hero::before{left:0;width:48%;height:4.5rem;clip-path:polygon(0 0,100% 100%,0 100%)}
+.hero::after{right:0;width:62%;height:7rem;clip-path:polygon(0 100%,100% 8%,100% 100%)}
+@media(max-width:860px){.hero .stripe,.hero .art{display:none}.hero .wrap{padding-bottom:7rem}.util .hide{display:none}}
+section{padding:3rem 0}
+h2{font-size:2rem;margin:0 0 .4rem;line-height:1.2}
+.lead{color:var(--muted);margin:0 0 1.6rem;max-width:40rem}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:.8rem;padding:1.4rem}
+.q-count{color:var(--muted);font-weight:700;margin:0 0 .3rem}
+.q-text{font-size:1.5rem;font-weight:700;margin:0 0 1rem;line-height:1.25}
+.opts{display:grid;gap:.7rem}
+.opt,.chip{font:inherit;cursor:pointer;border-radius:.5rem}
+.opt{background:var(--bg);color:var(--ink);border:2px solid var(--line);text-align:left;font-size:1.05rem;min-height:3.4rem;padding:.55rem 1rem}
+.opt:hover{border-color:var(--brand)}
+.bar{height:.6rem;background:var(--line);border-radius:1rem;overflow:hidden;margin-bottom:1.1rem}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.steps{padding-left:1.2rem;margin:.5rem 0 1.2rem}
+.steps li{margin-bottom:.6rem}
+.row{display:flex;gap:.8rem;flex-wrap:wrap}
+.grid2{display:grid;gap:1.2rem;grid-template-columns:1fr}
+@media(min-width:820px){.grid2{grid-template-columns:1.2fr 1fr}}
+.chat{display:flex;flex-direction:column;height:30rem}
+.log{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:.7rem;padding:.2rem .2rem 1rem}
+.msg{max-width:88%;padding:.7rem 1rem;border-radius:1rem;white-space:pre-line}
+.msg.bot{background:var(--bg);border:2px solid var(--line);align-self:flex-start}
+.msg.me{background:var(--brand);color:var(--brand-ink);align-self:flex-end}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.7rem}
+.chip{background:transparent;border:2px solid var(--brand);color:var(--brand);font-weight:700;min-height:2.8rem;padding:.3rem .9rem}
+.input{display:flex;gap:.5rem}
+.input input{flex:1;min-width:0;font:inherit;padding:.6rem .9rem;border-radius:.5rem;border:2px solid var(--line);background:var(--bg);color:var(--ink);min-height:3rem}
+.mic[aria-pressed="true"]{background:var(--bad);border-color:var(--bad);color:#fff}
+.tt{list-style:none;margin:0;padding:0}
+.tt li{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.tt li:last-child{border:0}
+.tt b{display:block;color:var(--brand)}
+.empty{color:var(--muted)}
+.tabs{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+.tabs .chip[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink)}
+.big{font-size:2.3rem;font-weight:700;margin:0;line-height:1.1}
+.delta{font-weight:700;font-size:1.15rem}
+.delta.up{color:var(--good)}.delta.down{color:var(--bad)}
+svg.chart{width:100%;height:auto;display:block;margin-top:1rem}
+.note{font-size:.85rem;color:var(--muted);margin-top:1rem}
+.feat{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.feat h3{margin:0 0 .3rem;font-size:1.2rem}
+.feat p{margin:0;color:var(--muted)}
+footer{padding:2rem 0 3rem;background:var(--bar);color:#d3deee;font-size:.9rem}
+.fb{position:fixed;right:1rem;bottom:calc(env(safe-area-inset-bottom,0px) + 0px);background:var(--hero);color:var(--hero-ink);font-weight:700;text-decoration:none;padding:.8rem 1.2rem;border-radius:.6rem .6rem 0 0;z-index:5;min-height:3rem;display:flex;align-items:center;gap:.5rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.orow{display:grid;grid-template-columns:minmax(8rem,12rem) 1fr 4.2rem;align-items:center;gap:.8rem;width:100%;font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:.5rem;padding:.6rem .8rem;margin-bottom:.6rem;cursor:pointer;text-align:left;min-height:3.4rem}
+.orow[aria-pressed="true"]{border-color:var(--brand);box-shadow:0 0 0 2px var(--brand)}
+.orow small{display:block;color:var(--muted);font-size:.78rem;line-height:1.25}
+.trk{height:1rem;background:var(--line);border-radius:1rem;overflow:hidden}
+.trk i{display:block;height:100%;background:var(--brand);border-radius:1rem}
+.val{font-weight:700;text-align:right}
+.amt{font:inherit;padding:.5rem .8rem;border:2px solid var(--line);border-radius:.5rem;background:var(--bg);color:var(--ink);min-height:3rem;width:11rem;margin-top:.3rem}
+@media(max-width:560px){.orow{grid-template-columns:1fr 4rem}.trk{grid-column:1/-1;order:3}}
+#ltext h3{margin:0 0 .5rem;font-size:1.5rem}
+#ltext[dir="rtl"]{text-align:right}
+#ltext[dir="rtl"] .steps{padding-left:0;padding-right:1.2rem}
+.stats{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));margin-bottom:1.5rem}
+.stat{background:var(--surface);border:2px solid var(--line);border-radius:.8rem;padding:1rem 1.2rem;color:var(--muted)}
+.stat b{display:block;font-size:2rem;line-height:1.15;color:var(--brand)}
+.ck{list-style:none;margin:0;padding:0}
+.ck li{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.ck li:last-child{border:0}
+.ck p{margin:.2rem 0 .7rem;color:var(--muted)}
+.ck .dot{flex:none;width:2.2rem;height:2.2rem;border-radius:50%;border:3px solid var(--brand);background:transparent;cursor:pointer;margin-top:.1rem;color:#fff;font:700 1.2rem/1 inherit;display:flex;align-items:center;justify-content:center}
+.ck li.done .dot{background:var(--good);border-color:var(--good)}
+.ck li.done .dot::after{content:"✓"}
+.ck li.done b{text-decoration:line-through;color:var(--muted)}
+.fgrid{display:grid;gap:0 1rem;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr))}
+.fld{display:grid;gap:.3rem;margin-bottom:1rem}
+.fld label{font-weight:700}
+.fld select,.fld input{font:inherit;padding:.6rem .9rem;border:2px solid var(--line);border-radius:.5rem;background:var(--bg);color:var(--ink);min-height:3rem;width:100%}
+[dir="rtl"] .steps,[dir="rtl"] .ck{padding-left:0;padding-right:1.2rem}
+[dir="rtl"] .ck{padding-right:0}
+[dir="rtl"] .val{text-align:left}
+[dir="rtl"] .fb{right:auto;left:1rem}
+[dir="rtl"] .msg.bot{align-self:flex-end}[dir="rtl"] .msg.me{align-self:flex-start}
+.dd{position:relative}
+.dd>button{font:inherit;font-weight:700;color:var(--ink);background:none;border:0;padding:.6rem .9rem;min-height:3rem;cursor:pointer;display:flex;gap:.35rem;align-items:center;border-radius:.5rem}
+.dd>button::after{content:"▾";font-size:.8em}
+.dd>button:hover{background:var(--bg)}
+.menu{display:none;position:absolute;top:100%;inset-inline-start:0;min-width:17rem;background:var(--surface);border:2px solid var(--line);border-radius:.6rem;box-shadow:0 8px 20px rgba(10,31,92,.18);padding:.4rem;z-index:20}
+.dd.open .menu,.dd:hover .menu{display:block}
+.menu a{display:block;font-weight:400;padding:.7rem .9rem}
+@media(hover:none){.dd:hover .menu{display:none}.dd.open .menu{display:block}}
+@media(max-width:860px){.menu{position:static;box-shadow:none}}
+.purpose{background:var(--surface);text-align:center}
+.purpose h2{font-size:clamp(1.8rem,4vw,2.6rem);max-width:28ch;margin:0 auto}
+.banner{background:var(--bar);color:#fff}
+.banner .wrap{display:grid;gap:2rem;align-items:center;grid-template-columns:1fr}
+@media(min-width:760px){.banner .wrap{grid-template-columns:11rem 1fr}}
+.banner h2{color:#fff}.banner p{max-width:38rem;margin:0 0 1.2rem}
+.bn-art svg{width:9rem;height:9rem}
+.rh{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.rail{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.8rem}
+.rail .card{flex:0 0 min(17rem,80%);scroll-snap-align:start;display:flex;flex-direction:column}
+.card h3{margin:0 0 .5rem;font-size:1.25rem}
+.rail .card p{margin:0 0 1rem;color:var(--muted)}
+.more{margin-top:auto;font-weight:700;color:var(--brand);text-decoration:none}
+.more:hover{text-decoration:underline}
+.stat2{font-size:1.8rem!important;font-weight:700;color:var(--brand)!important;margin:0 0 .3rem!important}
+.feat .card{display:flex;flex-direction:column}.feat .card p{margin-bottom:1rem}
+.two{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));margin-top:1rem}
+.pic{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.pic h3,.pic p,.pic .more{margin-inline:1.4rem}
+.pic h3{margin-top:1.2rem}.pic p{color:var(--muted);margin-top:0;margin-bottom:1rem}.pic .more{margin-bottom:1.4rem}
+.art2{height:9rem;background:linear-gradient(90deg,#2a5f9e,#0b2a6b)}.art2 svg{width:100%;height:100%;display:block}
+.news{background:var(--hero);color:var(--hero-ink)}
+.news .row{max-width:34rem}
+.news input{flex:1;min-width:12rem;font:inherit;padding:.6rem .9rem;border:2px solid var(--hero-ink);border-radius:.3rem;background:#fff;color:#0a1f5c;min-height:3rem}
+footer h3{color:#fff;margin:0 0 .5rem;font-size:1.05rem}
+footer a{color:#fff;display:block;padding:.25rem 0}
+footer p{margin:0 0 1rem}
+.fcols{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));margin-bottom:1.5rem}
+.legal a{display:inline;margin-inline-end:1.2rem}
+.rail .card{border-top:4px solid var(--brand);border-radius:1rem;box-shadow:0 1px 2px rgba(10,31,92,.06),0 8px 20px rgba(10,31,92,.08);cursor:pointer;transition:transform .15s,box-shadow .15s}
+.rail .card:nth-child(even){border-top-color:var(--good)}
+.rail .card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(10,31,92,.08),0 14px 28px rgba(10,31,92,.14)}
+button.more{font:inherit;font-weight:700;background:none;border:0;padding:.5rem 0;min-height:2.75rem;text-align:start;cursor:pointer;color:var(--brand)}
+button.more:hover{text-decoration:underline}
+body:has(dialog[open]){overflow:hidden}
+dialog{border:0;padding:0;border-radius:1rem;width:min(52rem,94vw);max-height:90vh;overflow:auto;background:var(--surface);color:var(--ink);box-shadow:0 24px 60px rgba(5,15,50,.45)}
+dialog[open]{animation:pop .22s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.98)}}
+dialog::backdrop{background:rgba(10,31,92,.6);backdrop-filter:blur(3px)}
+.mdh{background:linear-gradient(120deg,#173b5e,#0b2a6b);color:#fff;padding:1.4rem 1.6rem;display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;position:sticky;top:0;z-index:1}
+.mde{margin:0 0 .3rem;color:#6ddba2;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.mdh h2{margin:0;color:#fff;font-size:1.7rem}
+.mdx{flex:none;width:2.75rem;height:2.75rem;border-radius:50%;border:2px solid rgba(255,255,255,.6);background:transparent;color:#fff;font:inherit;font-size:1.1rem;cursor:pointer}
+.mdx:hover{background:rgba(255,255,255,.15)}
+.mdc{padding:1.5rem 1.6rem}
+.mdi{font-size:1.1rem;margin:0 0 1.2rem;color:var(--muted)}
+.mdl{margin:0;padding:0;list-style:none}
+.mdl li{padding:.6rem 0;padding-inline-start:2rem;position:relative}
+.mdl li::before{content:"✓";position:absolute;inset-inline-start:0;color:var(--good);font-weight:700}
+.mdf{padding:1rem 1.6rem 1.4rem;border-top:1px solid var(--line)}
+.mdf .note{margin:.8rem 0 0}
+.cmp{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.cp{border:1px solid var(--line);border-top:5px solid var(--brand);border-radius:.8rem;padding:1.1rem}
+.cp.c1{border-top-color:var(--good)}.cp.c2{border-top-color:var(--accent)}
+.cp h3{margin:0 0 .4rem;font-size:1.15rem}.cp p{margin:0;color:var(--muted)}
+.cp dt{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:.9rem}
+.cp dd{margin:.15rem 0 0}
+.mdn{background:var(--bg);border-radius:.8rem;padding:1rem 1.2rem;margin-top:1rem}
+.mdn h3{margin:0 0 .3rem;font-size:1.05rem}.mdn p{margin:0}
+@media(prefers-reduced-motion:reduce){dialog[open]{animation:none}.rail .card{transition:none}}
+#mdSlot .card{box-shadow:none}
+.chat{height:min(30rem,60vh)}
+footer p a{display:inline}
+.hero .purpose-hero{font-size:1.4rem;font-weight:700;line-height:1.3;max-width:26ch;margin:0;padding-inline-start:1rem;border-inline-start:6px solid var(--hero-ink)}
+.langbar{background:var(--surface);border-bottom:2px solid var(--line)}
+.langbar .wrap{display:flex;gap:.6rem 1rem;align-items:center;flex-wrap:wrap;padding-top:.8rem;padding-bottom:.8rem}
+.langbar .lbl{font-weight:700}
+#lbar{display:flex;gap:.4rem;flex-wrap:wrap}
+#lbar .chip{min-height:2.6rem}
+#lbar .chip[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink)}
+#lbarmsg{font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="util"><div class="wrap">
+<div class="l"><a class="on" href="#top">Individual</a><a href="#help">Family and carers</a><a href="#help">Adviser</a></div>
+<div class="r"><a class="hide" href="#options">Compare options</a><a class="hide" href="#why">Articles</a><a class="hide" href="#help">Contact us</a><span class="sep hide"></span><a href="#languages"><span aria-hidden="true">🌐&nbsp;</span>Languages</a><a href="#why"><span aria-hidden="true">🔍&nbsp;</span>Search</a><span class="sep"></span><button id="sizeBtn" aria-label="Make text bigger">Text size: A+</button></div>
+</div></div>
+<header>
+<div class="wrap">
+<a class="logo" href="#top" aria-label="Next Chapter home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 8c5-2.500 9-1.500 13 2 4-3.500 8-4.500 13-2v17c-5-2.500-9-1.500-13 2-4-3.500-8-4.500-13-2z" fill="none" stroke="#1f5a99" stroke-width="2.500" stroke-linejoin="round"/><path d="M16 10v17" stroke="#7fb43c" stroke-width="2.500"/></svg>Next Chapter</a>
+<nav aria-label="Main">
+<div class="dd"><button type="button" aria-expanded="false">I’m interested in…</button><div class="menu"><a href="#checklist">Getting ready for retirement</a><a href="#income">Planning my retirement income</a><a href="#assistant" data-ask="Tell me about planning for aged care">Planning for aged care</a></div></div>
+<div class="dd"><button type="button" aria-expanded="false">What we offer</button><div class="menu"><a href="#quiz">Retirement quiz</a><a href="#assistant">Your assistant</a><a href="#options">Compare options</a><a href="#adviser">Talk to an adviser</a><a href="#languages">Languages</a></div></div>
+<a href="#why">Why use Next Chapter</a>
+<div class="dd"><button type="button" aria-expanded="false">Help and support</button><div class="menu"><a href="#checklist">Retirement checklist</a><a href="#adviser">Contact us</a><a href="#languages">Languages</a></div></div>
+<div class="dd"><button type="button" aria-expanded="false">Learn</button><div class="menu"><a href="#income">Turning your super into income</a><a href="#options">Super investment options</a><a href="#assistant" data-ask="Tell me about the Age Pension">Age Pension and eligibility</a></div></div>
+<a class="btn mint" href="#quiz">Start now</a></nav>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<span class="stripe" aria-hidden="true"></span>
+<div class="art" aria-hidden="true"><svg viewBox="0 0 600 560" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cc8f2"/><stop offset="1" stop-color="#e6f2fb"/></linearGradient></defs><rect width="600" height="560" fill="url(#sk)"/><circle cx="470" cy="120" r="48" fill="#ffe08a"/><path d="M0 360C120 300 240 330 340 360S520 330 600 350V560H0Z" fill="#7fb43c"/><path d="M0 430C150 380 300 420 600 390V560H0Z" fill="#4f9a3c"/><rect x="250" y="270" width="190" height="120" fill="#fff"/><path d="M232 276 345 200l113 76Z" fill="#1f5a99"/><rect x="262" y="318" width="40" height="72" fill="#1f5a99"/><rect x="330" y="300" width="90" height="46" fill="#9cc8f2"/><rect x="236" y="352" width="222" height="10" fill="#0b2a6b"/><path d="M244 362v34M450 362v34M300 362v34M390 362v34" stroke="#0b2a6b" stroke-width="6"/><rect x="108" y="290" width="14" height="120" fill="#5a3f2a"/><circle cx="115" cy="270" r="52" fill="#2e7d32"/><circle cx="85" cy="300" r="36" fill="#3a9140"/><circle cx="150" cy="298" r="34" fill="#3a9140"/></svg></div>
+<div class="wrap">
+<h1>Get ready for your next chapter</h1>
+<p>See how super investment options compare, answer 15 short questions, and chat with an assistant that helps you prepare for retirement.</p>
+<p class="purpose-hero">Our purpose is to help Australians move from planning to confident action</p>
+</div>
+</div>
+
+<div class="langbar"><div class="wrap">
+<span class="lbl"><span aria-hidden="true">🌐 </span>Choose your language</span>
+<div id="lbar" role="group" aria-label="Language"></div>
+<span id="lbarmsg" role="status"></span>
+</div></div>
+
+<section class="banner"><div class="wrap">
+<div class="bn-art" aria-hidden="true"><svg viewBox="0 0 160 160"><circle cx="80" cy="80" r="76" fill="#6ddba2"/><path d="M48 84l22 22 44-48" fill="none" stroke="#0a1f5c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div><h2>Are you ready for your next chapter?</h2><p>Answer 15 short questions and get a suggested investment option to discuss, plus a timetable of small steps for the weeks and months ahead.</p><a class="btn mint" href="#quiz">Start the quiz</a></div>
+</div></section>
+
+<section id="offer"><div class="wrap">
+<div class="rh"><div><h2>What we offer</h2><p class="lead" style="margin:0">Everything you need to get from thinking about retirement to taking the next step.</p></div><div class="row"><button class="chip" id="rprev" type="button" aria-label="Previous">←</button><button class="chip" id="rnext" type="button" aria-label="Next">→</button></div></div>
+<div class="rail" id="rail" tabindex="0" aria-label="What we offer">
+<div class="card"><h3>Retirement quiz</h3><p>Answer 15 questions and get a personal timetable of next steps.</p><button class="more" type="button" data-modal="quiz">Learn more<span aria-hidden="true"> →</span></button></div>
+<div class="card"><h3>Your assistant</h3><p>Get answers, check-ins and a plan, by typing or by speaking.</p><button class="more" type="button" data-modal="assistant">Learn more<span aria-hidden="true"> →</span></button></div>
+<div class="card"><h3>Compare investment options</h3><p class="stat2">6.0% to 12.4%</p><p>Median returns for the five main option types, year to June 2026.</p><button class="more" type="button" data-modal="options">Learn more<span aria-hidden="true"> →</span></button></div>
+<div class="card"><h3>Turning your super into income</h3><p>A lump sum, a flexible income stream or a lifetime income. Many people mix them.</p><button class="more" type="button" data-modal="income">Learn more<span aria-hidden="true"> →</span></button></div>
+<div class="card"><h3>Talk to an adviser</h3><p>Request a call back from someone who speaks your language.</p><button class="more" type="button" data-modal="adviser">Learn more<span aria-hidden="true"> →</span></button></div>
+<div class="card"><h3>Languages</h3><p>Read the whole site in Chinese, Arabic, Vietnamese, Italian, Greek, Hindi or Spanish.</p><button class="more" type="button" data-modal="languages">Learn more<span aria-hidden="true"> →</span></button></div>
+</div></div></section>
+
+<section id="income"><div class="wrap">
+<h2>Turning your super into income</h2>
+<p class="lead">When you stop work, your super needs to pay you regularly. There are three common ways, and many people combine them.</p>
+<div class="feat">
+<div class="card"><h3>A lump sum</h3><p>Take some or all of your super as cash. You decide how to spend it, but it’s up to you to make it last.</p></div>
+<div class="card"><h3>A flexible income stream</h3><p>Your money stays invested and you choose your payments. It can rise or fall with markets, and the balance can run out.</p></div>
+<div class="card"><h3>A lifetime income</h3><p>Regular payments for as long as you live, however long that is. It gives certainty, but it’s less flexible and you often can’t take the money back out as a lump sum.</p></div>
+</div>
+<p class="note">The Age Pension can sit alongside any of these if you’re eligible.</p>
+<p><button class="btn" id="incAsk" type="button">Ask the assistant which mix to consider</button></p>
+</div></section>
+
+<section id="adviser"><div class="wrap">
+<h2>Talk to a person who speaks your language</h2>
+<p class="lead">Prefer to speak with someone? Request a call back from a multilingual adviser.</p>
+<div class="card">
+<div class="fgrid">
+<div class="fld"><label for="advLang">Your language</label><select id="advLang"><option>English</option><option>Mandarin (普通话)</option><option>Cantonese (廣東話)</option><option>العربية</option><option>Tiếng Việt</option><option>Italiano</option><option>Ελληνικά</option><option>हिन्दी</option><option>Español</option><option>Another language</option></select></div>
+<div class="fld"><label for="advTime">Best time to call</label><select id="advTime"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+<div class="fld"><label for="advPh">Your phone number</label><input id="advPh" type="tel" inputmode="tel" autocomplete="tel"></div>
+</div>
+<button class="btn" id="advGo" type="button">Request a call back</button>
+<p id="advMsg" role="status" style="margin:1rem 0 0;font-weight:700"></p>
+<p class="note">Demo only: no details are sent or stored.</p>
+</div>
+</div></section>
+
+<section id="why"><div class="wrap">
+<h2>Why use Next Chapter?</h2>
+<div class="two">
+<div class="card pic"><div class="art2" aria-hidden="true"><svg viewBox="0 0 400 144" preserveAspectRatio="xMidYMid slice"><path d="M0 100C80 70 160 90 240 80S360 60 400 70V144H0Z" fill="#7fb43c"/><circle cx="320" cy="40" r="22" fill="#ffe08a"/><rect x="150" y="56" width="90" height="56" fill="#fff"/><path d="M142 60 195 24l53 36Z" fill="#6ddba2"/></svg></div><h3>How it works</h3><p>Plain-English questions, a plan you can follow, and an assistant you can type to or talk to.</p><a class="more" href="#quiz">Learn more<span aria-hidden="true"> →</span></a></div>
+<div class="card pic"><div class="art2" aria-hidden="true"><svg viewBox="0 0 400 144" preserveAspectRatio="xMidYMid slice"><path d="M0 110C100 80 200 120 400 90V144H0Z" fill="#4f9a3c"/><circle cx="110" cy="60" r="18" fill="#ffe08a"/><circle cx="170" cy="56" r="18" fill="#6ddba2"/><circle cx="230" cy="60" r="18" fill="#fff"/><circle cx="290" cy="56" r="18" fill="#9cc8f2"/></svg></div><h3>Built for everyone</h3><p>Large text, voice, eight languages and a call back from a real person.</p><a class="more" href="#languages">Learn more<span aria-hidden="true"> →</span></a></div>
+</div>
+</div></section>
+
+<section id="learn"><div class="wrap">
+<h2>Want more information?</h2>
+<p class="lead">Take a look at the ways you can get extra information and support.</p>
+<div class="feat">
+<div class="card"><h3>Customer service</h3><p>Ask a question or request a call back from an adviser who speaks your language.</p><a class="more" href="#adviser">Contact us<span aria-hidden="true"> →</span></a></div>
+<div class="card"><h3>Start planning for retirement</h3><p>Everyone starts from a different place. Knowing the steps makes it easier to begin.</p><a class="more" href="#checklist">Read more<span aria-hidden="true"> →</span></a></div>
+<div class="card"><h3>Planning for aged care</h3><p>Starting the conversation early helps you and your family make informed decisions.</p><a class="more" href="#assistant" data-ask="Tell me about planning for aged care">Ask the assistant<span aria-hidden="true"> →</span></a></div>
+</div>
+</div></section>
+
+<section class="news"><div class="wrap">
+<h2>Subscribe to our newsletter</h2>
+<p>A free email for Australians planning their retirement or already retired.</p>
+<div class="row"><label class="sr" for="nlE">Email address</label><input id="nlE" type="email" placeholder="Your email address" autocomplete="email"><button class="btn dark" id="nlGo" type="button">Subscribe</button></div>
+<p id="nlM" role="status" style="font-weight:700;margin:.8rem 0 0"></p>
+</div></section>
+</main>
+
+<footer id="help"><div class="wrap">
+<div class="fcols"><div><h3>Explore</h3><a href="#quiz">Take the quiz</a><a href="#options">Compare options</a><a href="#checklist">Checklist</a><a href="#languages">Languages</a></div>
+<div><h3>Support</h3><a href="#adviser">Contact us</a><a href="#assistant">Your assistant</a><a href="#learn">Learn</a></div>
+<div><h3>Contact</h3><p>Phone: <a href="tel:0255501234">(02) 5550 1234</a></p><p>Email: <a href="mailto:hello@nextchapter.example">hello@nextchapter.example</a></p></div></div>
+<p>We acknowledge the Traditional Custodians of Country throughout Australia and pay our respects to Elders past and present.</p>
+<p>General information only, not financial advice. Returns are medians for each type of option, not for any one fund, and past performance doesn’t predict future returns. Consider speaking to a licensed adviser or your fund before switching options. Figures: Chant West (to 30 June 2026) and SuperGuide (to 30 September 2026).</p>
+<p class="legal"><a href="#">Conditions of use</a><a href="#">Disclaimer</a><a href="#">Financial services guide</a><a href="#">Privacy</a><a href="#">Accessibility</a></p>
+</div></footer>
+
+<div id="hold" hidden>
+<div id="pn-quiz" hidden><p class="mdi">Fifteen short questions about where you are now and what you want from retirement. It takes about five minutes and there are no wrong answers.</p>
+<div class="card" id="quizCard" aria-live="polite"></div>
+</div>
+<div id="pn-assistant" hidden><p class="mdi">Ask about investment options by typing or speaking. It uses your quiz answers, checks in with you and builds a timetable of small steps.</p>
+<div class="grid2">
+<div class="card chat">
+<div class="log" id="log" role="log" aria-live="polite"></div>
+<div class="chips" id="chips"></div>
+<form class="input" id="chatForm">
+<label class="sr" for="msg">Type your question</label>
+<input id="msg" autocomplete="off" placeholder="Type your question here">
+<button class="btn mic" type="button" id="mic" aria-pressed="false" aria-label="Speak your question">🎤 Speak</button>
+<button class="btn" type="submit">Send</button>
+</form>
+<label style="margin-top:.7rem;display:flex;gap:.6rem;align-items:center"><input type="checkbox" id="speak" style="width:1.4rem;height:1.4rem"> Read replies aloud</label>
+</div>
+<div class="card">
+<h3 style="margin-top:0">Your plan</h3>
+<ol class="tt" id="plan"><li class="empty">Finish the quiz and your timetable appears here.</li></ol>
+</div>
+</div>
+</div>
+<div id="pn-languages" hidden><p class="mdi">Choose your language to read how Next Chapter works. You can also have it read aloud.</p>
+<div class="card">
+<div class="tabs" id="lchips" role="group" aria-label="Choose a language"></div>
+<div id="ltext" style="margin:1rem 0"></div>
+<div class="row"><button class="btn" id="lspeak" type="button">🔊 Read aloud</button><a class="btn mint" href="tel:131450">📞 Free interpreter: 131 450</a></div>
+<p class="note" id="lmsg" role="status"></p>
+<p class="note">Choosing a language translates the whole page using AI, so some wording may not be perfect. Translations should be checked by accredited translators before launch. TIS National is the Australian Government’s free interpreting service.</p>
+</div>
+</div>
+<div id="pn-options" hidden><p class="mdi">How each main type of super investment option has performed. Choose one to see what it holds and who it tends to suit.</p>
+<div class="card">
+<div class="tabs" id="ptabs" role="group" aria-label="Time period"></div>
+<div id="rows"></div>
+<p class="note">Median return for each type of option, after investment fees and tax and before administration fees. Not the result of any one fund. Past performance doesn’t predict future returns. Sources: Chant West (to 30 June 2026) and SuperGuide’s monthly performance guide (to 30 September 2026).</p>
+</div>
+<div class="card" id="detail" style="margin-top:1.2rem"></div>
+</div>
+<div id="pn-checklist" hidden><p class="mdi">Five things to do to be ready. Tick them off as you go, and ask the assistant for help with any of them.</p>
+<div class="stats">
+<div class="stat"><b>67</b>Age Pension age</div>
+<div class="stat"><b>81.1 / 85.1</b>Average life expectancy at birth in years (men / women)</div>
+<div class="stat"><b>20+ years</b>A safer length to plan your retirement for</div>
+</div>
+<div class="card">
+<p class="q-count" id="ckn"></p><div class="bar"><i id="ckp" style="width:0"></i></div>
+<ol class="ck" id="ck"></ol>
+</div>
+<p class="note">Averages at birth understate how long people who reach 67 are likely to live, so it’s safer to plan for 20 years or more.</p>
+</div>
+</div>
+<dialog id="md" aria-labelledby="mdT"><div id="mdB"></div></dialog>
+<a class="fb" href="#assistant">😊 Feedback</a>
+<script>
+const $=id=>document.getElementById(id);
+const P=[{k:"fy",l:"Year to June 2026"},{k:"y",l:"Year to Sept 2026"},{k:"q",l:"Jul to Sep 2026"}];
+const O=[
+{n:"Conservative",g:"21–40%",r:{fy:6.0,y:3.8,q:0.1},w:"Mostly bonds, cash and fixed interest, with some shares and property.",s:"People who want steadier value and are close to, or already in, retirement.",d:"Smaller ups and downs, but it may not keep up with rising costs over a long retirement."},
+{n:"Balanced",g:"41–60%",r:{fy:7.6,y:5.2,q:0.5},w:"A fairly even split between shares and property, and bonds and cash.",s:"People a few years from retirement who want some growth with less risk.",d:"Moderate ups and downs. It usually falls less than Growth in a bad year."},
+{n:"Growth",g:"61–80%",r:{fy:9.5,y:6.3,q:0.8},w:"Mostly shares and property, with a smaller share in bonds and cash.",s:"People with several years to go, or who’ll draw on their super slowly. It’s the most common default option.",d:"Bigger swings. The median Growth fund fell 3.2% in March 2026 alone, then recovered."},
+{n:"High Growth",g:"81–95%",r:{fy:10.9,y:7.2,q:1.2},w:"Almost all shares and property.",s:"People with a long time before they’ll need the money and a high comfort with risk.",d:"Large swings, and it can take years to recover after a major fall."},
+{n:"All Growth",g:"96–100%",r:{fy:12.4,y:7.7,q:1.3},w:"Virtually all shares and property.",s:"Usually only people with a very long time horizon. It’s rarely chosen close to retirement.",d:"The biggest swings of all the options."}];
+let per="fy",sel=2,sug=null,amt=400000;
+const pct=v=>v.toFixed(1)+"%",money=n=>"$"+Math.abs(Math.round(n)).toLocaleString("en-AU");
+function setSel(i){sel=i;drawOpts()}
+function drawOpts(){
+$("ptabs").innerHTML=P.map(p=>`<button class="chip" data-k="${p.k}" aria-pressed="${p.k===per}">${p.l}</button>`).join("");
+$("ptabs").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{per=b.dataset.k;drawOpts()});
+const mx=Math.max(...O.map(o=>o.r[per]));
+$("rows").innerHTML=O.map((o,i)=>`<button class="orow" data-i="${i}" aria-pressed="${i===sel}"><span class="nm"><b>${o.n}</b><small>${o.g} growth assets${i===sug?" · ★ Suggested for you":""}</small></span><span class="trk" aria-hidden="true"><i style="width:${Math.max(o.r[per]/mx*100,2)}%"></i></span><span class="val">${pct(o.r[per])}</span></button>`).join("");
+$("rows").querySelectorAll(".orow").forEach(b=>b.onclick=()=>setSel(+b.dataset.i));
+const o=O[sel];
+$("detail").innerHTML=`<h3 style="margin:0 0 .2rem">${o.n}</h3><p class="note" style="margin:0 0 .8rem">${o.g} growth assets${sel===sug?" · ★ Suggested for you":""}</p><p><b>What it holds:</b> ${o.w}</p><p><b>Tends to suit:</b> ${o.s}</p><p><b>Ups and downs:</b> ${o.d}</p><label for="amt"><b>If you had this much in ${o.n}:</b></label><br><input class="amt" id="amt" inputmode="numeric" value="${amt.toLocaleString("en-AU")}"><p class="big" id="res" aria-live="polite"></p><p class="note">Median result for ${P.find(p=>p.k===per).l.toLowerCase()}, after investment fees and tax. Past results only.</p>`;
+const calc=()=>{const r=o.r[per],g=amt*r/100;$("res").textContent=(r>=0?"▲ +":"▼ −")+money(g)};
+$("amt").oninput=e=>{amt=parseInt(e.target.value.replace(/[^0-9]/g,""))||0;calc()};calc();
+}
+
+const Q=[
+{k:"age",t:"How old are you?",o:[["Under 50"],["50 to 54"],["55 to 59"],["60 to 66"],["67 or older"]]},
+{k:"yrs",t:"When do you plan to retire?",o:[["I’ve already retired",1],["Within 2 years",1],["In 3 to 5 years",2],["In 6 to 10 years",3],["More than 10 years",4]]},
+{k:"work",t:"Are you still working?",o:[["Yes, full time"],["Yes, part time"],["No, I’m not working"]]},
+{k:"bal",t:"Roughly how much is in your super?",o:[["Under $100,000"],["$100,000 to $300,000"],["Over $300,000"],["I’m not sure"]]},
+{k:"accts",t:"How many super accounts do you have?",o:[["Just one"],["Two or more"],["I’m not sure"]]},
+{k:"cur",t:"Which investment option are you in now?",o:[["Conservative"],["Balanced"],["Growth"],["High Growth or All Growth"],["I’m not sure"]]},
+{k:"lang",t:"Which language do you prefer for advice?",o:[["English"],["Chinese"],["Arabic"],["Vietnamese"],["Another language"]]},
+{k:"cmf",t:"If your balance fell 15% in one year, how would you feel?",o:[["Very uncomfortable",1],["Uneasy, but I’d wait it out",2.5],["Comfortable, I think long term",4]]},
+{k:"pri",t:"What matters most to you?",o:[["Protecting what I have",1],["A steady income",1.5],["Growing my balance",3.5],["I’m not sure",2.5]]},
+{k:"home",t:"Do you own your home?",o:[["Yes, outright"],["Yes, with a mortgage"],["No, I rent"],["Something else"]]},
+{k:"other",t:"Do you have other savings or income?",o:[["Yes, a fair amount"],["A little"],["Not really"]]},
+{k:"partner",t:"Do you share your finances with a partner?",o:[["Yes"],["No"]]},
+{k:"legal",t:"Do you have an up-to-date will and super beneficiary nomination?",o:[["Yes, both"],["Only one of them"],["Neither"],["I’m not sure"]]},
+{k:"pension",t:"How much do you know about the Age Pension?",o:[["I already receive it"],["I know a bit"],["Very little"]]},
+{k:"tech",t:"How comfortable are you with apps and websites?",o:[["Very comfortable"],["Somewhat"],["Not very"]]}
+];
+const A={};let qi=0,plan=[];
+const a=k=>Q.find(q=>q.k===k).o[A[k]];
+const card=$("quizCard");
+function showQ(){
+const q=Q[qi];
+card.innerHTML=`<p class="q-count">Question ${qi+1} of ${Q.length}</p><div class="bar"><i style="width:${qi/Q.length*100}%"></i></div><p class="q-text" tabindex="-1">${q.t}</p><div class="opts">${q.o.map((o,i)=>`<button class="opt" data-i="${i}">${o[0]}</button>`).join("")}</div>${qi?'<p><button class="chip" id="back" style="margin-top:1rem">Go back</button></p>':""}`;
+card.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{A[q.k]=+b.dataset.i;qi++;qi<Q.length?showQ():done()});
+const bk=$("back");if(bk)bk.onclick=()=>{qi--;showQ()};
+card.querySelector(".q-text").focus({preventScroll:true});
+}
+function build(){
+const sc=(a("yrs")[1]+a("cmf")[1]+a("pri")[1])/3;
+sug=sc<=1.7?0:sc<=2.6?1:sc<=3.4?2:3;
+const cur=[0,1,2,3,null][A.cur],y=A.yrs,s=[];
+if(A.cur===4)s.push(["This week","Find out which investment option you’re in, through your fund’s website or myGov."]);
+if(A.bal===3)s.push(["This week","Find your current balance in your fund’s app or on myGov."]);
+if(A.accts>0)s.push(["This week","Search myGov for all your super accounts and ask about combining them, so you pay fewer sets of fees."]);
+if(A.lang>0)s.push(["This week","Request a call back from an adviser who speaks your language (see Talk to an adviser)."]);
+if(cur!==null&&cur!==sug)s.push(["This week",`Ask your fund what moving from ${O[cur].n} to ${O[sug].n} would mean, including fees and timing.`]);
+else if(cur===sug)s.push(["This week",`Your current option matches the one suggested (${O[sug].n}). Ask your fund how it performed in past bad years.`]);
+s.push(["This month","Ask your fund for a retirement income projection based on your balance and retirement date."]);
+if(A.legal>0)s.push(["This month","Make or update your will and check who is nominated as the beneficiary of your super."]);
+if(A.pension>0)s.push(["This month",A.age===4?"You’re at Age Pension age (67). Use the Services Australia estimator and check whether you can apply now.":"Use the Services Australia estimator to see what Age Pension you may be able to receive."]);
+if(y===0)s.push(["This month","Review how your income is paid, and keep enough cash for the next few years of payments."]);
+else if(y<=2)s.push(["Next 3 months","Work out the yearly income you’ll need, then decide between a lump sum, an income stream, a lifetime income, or a mix."]);
+else s.push(["This year","Set a target retirement date, then review your investment option once a year as it gets closer."]);
+if(A.age<=2)s.push(["Before you turn 60","Learn the rules for when you can access your super."]);
+if(y>0&&A.work<2)s.push(["Next 3 months","Ask your fund whether extra contributions or a transition to retirement plan could suit you."]);
+if(A.home===1)s.push(["Next 3 months","Work out whether to pay off your mortgage before you retire."]);
+if(A.partner===0)s.push(["Next 3 months","Sit down with your partner and plan your retirement income together."]);
+if(A.other===2)s.push(["This year","Talk to your fund about building a small safety buffer outside super."]);
+if(y>0&&y<=2)s.push(["Before you retire","Keep a cash buffer for the first few years so you’re not forced to sell after a fall."]);
+if(A.tech===2)s.push(["Any time","Prefer not to type? Press the microphone in the assistant, or request a call back from a person."]);
+s.push(["Every 3 months","A short check-in with your assistant to see if anything has changed."]);
+plan=s;
+}
+function done(){
+build();setSel(sug);
+$("plan").innerHTML=plan.map(x=>`<li><b>${x[0]}</b>${x[1]}</li>`).join("");
+card.innerHTML=`<div class="bar"><i style="width:100%"></i></div><p class="q-text" tabindex="-1">Thanks. From your answers, <b>${O[sug].n}</b> is worth talking through with your fund.</p><p class="note" style="margin:0 0 1rem">This is general information, not advice. Your options might look different with an adviser.</p><ol class="steps">${plan.slice(0,3).map(x=>`<li><b>${x[0]}:</b> ${x[1]}</li>`).join("")}</ol><div class="row"><a class="btn" href="#options">Compare the options</a><a class="btn ghost" href="#assistant">Ask the assistant</a><button class="btn ghost" id="redo">Start again</button></div>`;
+$("redo").onclick=()=>{qi=0;sug=null;drawOpts();showQ()};
+bot(`Thanks for answering. Based on your answers, ${O[sug].n} is one to discuss with your fund. I’ve built your timetable on the right. Would you like me to compare it with the other options?`);
+card.querySelector(".q-text").focus({preventScroll:true});
+}
+
+const log=$("log"),spk=$("speak");
+function add(t,c){const d=document.createElement("div");d.className="msg "+c;d.textContent=t;log.appendChild(d);log.scrollTop=log.scrollHeight}
+function bot(t){add(t,"bot");if(spk.checked&&"speechSynthesis" in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-AU";u.rate=.9;speechSynthesis.speak(u)}}
+const find=t=>/high growth/.test(t)?3:/all growth/.test(t)?4:/conservative/.test(t)?0:/balanced/.test(t)?1:/growth/.test(t)?2:-1;
+function reply(raw){
+const t=raw.toLowerCase(),i=find(t);
+if(i>=0){setSel(i);const o=O[i];return `${o.n} (${o.g} growth assets) returned ${pct(o.r.fy)} in the year to June 2026 and ${pct(o.r.y)} in the year to September. ${o.w} ${o.s} I’ve highlighted it in Compare options.`}
+if(/cash/.test(t))return "Cash options hold money at around the cash rate. They’re very stable, but over long periods they usually return less than other options. The research I use doesn’t track cash, so I don’t have a figure.";
+if(/compare|options|return|perform/.test(t))return "In the year to June 2026 the median returns were: "+O.map(o=>o.n+" "+pct(o.r.fy)).join(", ")+". Over the 12 months to September they were lower: "+O.map(o=>pct(o.r.y)).join(", ")+". Recent years have been unusually strong, so don’t assume they’ll continue.";
+if(/suit|suggest|which|recommend|right|best/.test(t))return sug!==null?`From your answers, ${O[sug].n} is one to talk through with your fund. It’s general information, not advice. Would you like to see how it compares?`:"Take the quiz first and I’ll suggest an option to discuss.";
+if(/risk|fall|drop|lose|crash|safe/.test(t))return "Higher growth options usually fall further in bad years. Between late 2007 and early 2009, growth funds lost about 26% on average. Closer to retirement, many people move towards Balanced or Conservative so a fall hurts less.";
+if(/switch|change|move/.test(t))return "Switching moves your money between options. If you switch after a fall, you can lock in the loss, so timing matters. Ask your fund about any fees and how long it takes.";
+if(/\bplan\b|timetable|\bstep/.test(t))return plan.length?"Your first step: "+plan[0][1]+" Want me to check in with you in a week?":"Finish the quiz and I’ll build your timetable.";
+if(/check/.test(t))return "I’ll check in every few months. Today: how are you feeling about retirement?";
+if(/beneficiar|legal|admin|my will|a will|estate|nominat/.test(t))return "Two key jobs: make or update your will, and check who is nominated as the beneficiary of your super. Your super doesn’t automatically follow your will, so the nomination matters. Ask your fund how to update it, and consider a legal professional for your will.";
+if(/budget|spend|expens/.test(t))return "A simple way to start: list what comes in each year (pension, super income, savings) and what goes out, split into essentials like housing, food and health, and extras like travel. That gives you a target income to test against your options.";
+if(/goal|timeline/.test(t))return "Start with two things: the age you’d like to stop work and the yearly income you’d like. The Age Pension age is 67. The quiz above turns your answers into a timetable.";
+if(/lump sum|lifetime|annuit|income stream|mix/.test(t))return "There are three common ways to turn super into income: a lump sum, a flexible income stream that stays invested, or a lifetime income that pays for as long as you live. Many people combine them. See “Turning your super into income” on this page, and talk to your fund or an adviser about the right mix.";
+if(/aged care|nursing|care cost/.test(t))return "Aged care costs can include accommodation and daily care fees, and some depend on your income and assets. Starting the conversation early with family helps. My Aged Care (myagedcare.gov.au) and your adviser can explain the costs for your situation.";
+if(/pension/.test(t))return "The Age Pension is a government payment. Eligibility depends on age, income and assets, and your super counts towards it. The Services Australia estimator gives a quick answer.";
+if(/fee/.test(t))return "Fees come out of your balance each year, so small differences add up. Compare administration and investment fees on your statement. The returns shown here are after investment fees but before administration fees.";
+if(/hello|hi\b|hey/.test(t))return "Hello! Are you thinking about retirement, or about which investment option to be in?";
+return "I’m not sure about that one. Your fund or a licensed adviser can help. Shall I note it for your next check-in?";
+}
+function send(t){if(!t.trim())return;add(t,"me");setTimeout(()=>bot(reply(t)),400)}
+$("chatForm").onsubmit=e=>{e.preventDefault();send($("msg").value);$("msg").value=""};
+["Compare the options","Which option suits me?","How risky is Growth?","Should I switch?"].forEach(t=>{const b=document.createElement("button");b.className="chip";b.textContent=t;b.onclick=()=>send(t);$("chips").appendChild(b)});
+bot("Hello, I’m your Next Chapter assistant. I can compare super investment options, explain the risks and help you plan. Type, tap a suggestion, or press Speak.");
+const mic=$("mic"),SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+if(SR){const r=new SR();r.lang="en-AU";r.onresult=e=>send(e.results[0][0].transcript);r.onend=()=>mic.setAttribute("aria-pressed","false");
+mic.onclick=()=>{if(mic.getAttribute("aria-pressed")==="true"){r.stop();return}try{r.start();mic.setAttribute("aria-pressed","true")}catch(e){}}}
+else{mic.disabled=true;mic.title="Voice input isn’t supported in this browser. Try Chrome or Safari."}
+const sizes=[20,24,28];let si=0;
+$("sizeBtn").onclick=function(){si=(si+1)%3;document.documentElement.style.setProperty("--fs",sizes[si]+"px");this.textContent="Text size: "+["A+","A++","A"][si]};
+const L=[
+{c:"zh-CN",n:"中文（简体）",t:"欢迎使用 Next Chapter",i:"满怀信心地规划您的退休生活。我们帮助您了解自己的养老金，并比较不同的投资选项。",s:["回答十五个简短问题。","比较养老金投资选项。","向助手咨询并获得计划。"],x:"仅为一般信息，不构成财务建议。如需免费口译服务，请致电 TIS National：131 450。"},
+{c:"zh-HK",n:"中文（繁體）",t:"歡迎使用 Next Chapter",i:"滿懷信心地規劃您的退休生活。我們幫助您了解自己的退休金，並比較不同的投資選項。",s:["回答十五個簡短問題。","比較退休金投資選項。","向助手諮詢並獲得計劃。"],x:"僅為一般資訊，不構成財務建議。如需免費傳譯服務，請致電 TIS National：131 450。"},
+{c:"ar",d:"rtl",n:"العربية",t:"مرحبًا بكم في Next Chapter",i:"خطّطوا لتقاعدكم بثقة. نساعدكم على فهم صندوق التقاعد (السوبر) ومقارنة خيارات الاستثمار.",s:["أجيبوا عن خمسة عشر سؤالًا قصيرًا.","قارنوا خيارات الاستثمار في صندوق التقاعد.","اطلبوا المساعدة وخطة من المساعد."],x:"معلومات عامة فقط وليست نصيحة مالية. للحصول على مترجم شفهي مجاني، اتصلوا بخدمة TIS National على 131 450."},
+{c:"vi",n:"Tiếng Việt",t:"Chào mừng bạn đến với Next Chapter",i:"Lên kế hoạch nghỉ hưu một cách tự tin. Chúng tôi giúp bạn hiểu về quỹ hưu bổng (super) và so sánh các lựa chọn đầu tư.",s:["Trả lời mười lăm câu hỏi ngắn.","So sánh các lựa chọn đầu tư super.","Hỏi trợ lý để được giúp đỡ và có kế hoạch."],x:"Chỉ là thông tin chung, không phải tư vấn tài chính. Để có thông dịch viên miễn phí, hãy gọi TIS National theo số 131 450."},
+{c:"it",n:"Italiano",t:"Benvenuto in Next Chapter",i:"Pianifica la pensione con fiducia. Ti aiutiamo a capire la tua superannuation e a confrontare le opzioni di investimento.",s:["Rispondi a quindici brevi domande.","Confronta le opzioni di investimento della super.","Chiedi aiuto all’assistente e ottieni un piano."],x:"Solo informazioni generali, non consulenza finanziaria. Per un interprete gratuito, chiama TIS National al 131 450."},
+{c:"el",n:"Ελληνικά",t:"Καλώς ήρθατε στο Next Chapter",i:"Σχεδιάστε τη συνταξιοδότησή σας με σιγουριά. Σας βοηθάμε να κατανοήσετε το super σας και να συγκρίνετε επιλογές επένδυσης.",s:["Απαντήστε σε δεκαπέντε σύντομες ερωτήσεις.","Συγκρίνετε τις επιλογές επένδυσης του super.","Ζητήστε βοήθεια και πρόγραμμα από τον βοηθό."],x:"Μόνο γενικές πληροφορίες, όχι χρηματοοικονομική συμβουλή. Για δωρεάν διερμηνέα, καλέστε το TIS National στο 131 450."},
+{c:"hi",n:"हिन्दी",t:"Next Chapter में आपका स्वागत है",i:"आत्मविश्वास के साथ अपनी रिटायरमेंट की योजना बनाएँ। हम आपको अपने सुपर (superannuation) को समझने और निवेश विकल्पों की तुलना करने में मदद करते हैं।",s:["पंद्रह छोटे प्रश्नों के उत्तर दें।","सुपर निवेश विकल्पों की तुलना करें।","सहायक से मदद और योजना पाएँ।"],x:"केवल सामान्य जानकारी, वित्तीय सलाह नहीं। मुफ़्त दुभाषिया के लिए TIS National को 131 450 पर कॉल करें।"},
+{c:"es",n:"Español",t:"Bienvenido a Next Chapter",i:"Planifique su jubilación con confianza. Le ayudamos a entender su superannuation y a comparar opciones de inversión.",s:["Responda quince preguntas breves.","Compare las opciones de inversión de su super.","Pida ayuda y un plan al asistente."],x:"Solo información general, no asesoramiento financiero. Para un intérprete gratuito, llame a TIS National al 131 450."}
+];
+let li=-1;
+function drawLang(){
+$("lchips").innerHTML=[EN,...L].map((l,i)=>`<button class="chip" lang="${l.c}" data-i="${i-1}" aria-pressed="${i-1===li}">${l.n}</button>`).join("");
+$("lchips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>pick(+b.dataset.i));
+$("lbar").innerHTML=$("lchips").innerHTML;$("lbar").querySelectorAll(".chip").forEach(b=>b.onclick=()=>pick(+b.dataset.i));
+const l=li<0?EN:L[li],t=$("ltext");
+t.lang=l.c;t.dir=l.d||"ltr";
+t.innerHTML=`<h3>${l.t}</h3><p>${l.i}</p><ol class="steps">${l.s.map(x=>`<li>${x}</li>`).join("")}</ol><p class="note">${l.x}</p>`;
+}
+$("lspeak").onclick=()=>{if(!("speechSynthesis" in window))return;const l=li<0?EN:L[li];speechSynthesis.cancel();const u=new SpeechSynthesisUtterance([l.t,l.i,...l.s,l.x].join(" "));u.lang=l.c;u.rate=.9;speechSynthesis.speak(u)};
+const CK=[
+{t:"Set your goals and timeline",d:"Choose a target retirement date and the yearly income you’d like.",q:"Help me set retirement goals and a timeline",l:["#quiz","Take the quiz"]},
+{t:"Manage your super and savings",d:"Find all your super accounts, check the fees and compare investment options.",q:"Compare the options",l:["#options","Compare options"]},
+{t:"Check the Age Pension and support",d:"The Age Pension age is 67. Use the Services Australia estimator to see what you might receive.",q:"Tell me about the Age Pension",l:["https://www.servicesaustralia.gov.au","Services Australia"]},
+{t:"Sort out legal and admin details",d:"Make or update your will, and check who is nominated as the beneficiary of your super.",q:"What legal and admin things should I sort out?"},
+{t:"Organise your finances and spending",d:"List your regular income and expenses so you know what you’ll need each year.",q:"How do I work out my retirement budget?"}];
+const ckd=new Set();
+function ask(q){send(q);$("assistant").scrollIntoView()}
+function drawCk(){
+$("ck").innerHTML=CK.map((c,i)=>`<li class="${ckd.has(i)?"done":""}"><button class="dot" data-i="${i}" aria-pressed="${ckd.has(i)}" aria-label="Mark done: ${c.t}"></button><div><b>${c.t}</b><p>${c.d}</p><div class="row"><button class="chip" data-q="${i}">Ask the assistant</button>${c.l?`<a class="chip" style="text-decoration:none;display:inline-flex;align-items:center" href="${c.l[0]}"${c.l[0][0]==="#"?"":" target=_blank rel=noopener"}>${c.l[1]}</a>`:""}</div></div></li>`).join("");
+$("ckp").style.width=ckd.size/CK.length*100+"%";$("ckn").textContent=ckd.size+" of "+CK.length+" done";
+$("ck").querySelectorAll(".dot").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;ckd.has(i)?ckd.delete(i):ckd.add(i);drawCk()});
+$("ck").querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>ask(CK[+b.dataset.q].q));
+}
+$("incAsk").onclick=()=>ask("Explain lump sum versus lifetime income");
+$("advGo").onclick=()=>{const p=$("advPh").value.trim(),m=$("advMsg");if(!p){m.textContent="Please enter a phone number so we can call you.";return}m.textContent=`Thanks. In a live version, an adviser who speaks ${$("advLang").value} would call you in the ${$("advTime").value.toLowerCase()}. This is a demo, so nothing was sent.`};
+const EN={c:"en-AU",n:"English",t:"Welcome to Next Chapter",i:"Plan your retirement with confidence. We help you understand your super and compare investment options.",s:["Answer 15 short questions.","Compare super investment options.","Ask the assistant for help and a plan."],x:"General information only, not financial advice. For a free interpreter, call TIS National on 131 450."};
+const EL={"zh-CN":"Simplified Chinese","zh-HK":"Traditional Chinese (Hong Kong)",ar:"Arabic",vi:"Vietnamese",it:"Italian",el:"Greek",hi:"Hindi",es:"Spanish"};
+const WT={"zh-CN":"正在翻译…","zh-HK":"正在翻譯…",ar:"جارٍ الترجمة…",vi:"Đang dịch…",it:"Traduzione in corso…",el:"Μετάφραση σε εξέλιξη…",hi:"अनुवाद हो रहा है…",es:"Traduciendo…"};
+let LG=null,smp,TN=new Set(),NM=new WeakMap(),busy=false,running=false,rerun=false,tmr;
+const TC=new Map(),SKIP="script,style,svg,#lchips,#lbar,#lbarmsg,#ltext,#lmsg,#advLang,.msg.me";
+const SC=["zh-CN","zh-HK","ar","vi","it","el","hi","es"];
+const SD=[
+["Take the quiz","参加测验","參加測驗","ابدأ الاختبار","Làm bài trắc nghiệm","Fai il quiz","Κάντε το κουίζ","क्विज़ लें","Haga el cuestionario"],
+["Your assistant","您的助手","您的助手","مساعدكم","Trợ lý của bạn","Il tuo assistente","Ο βοηθός σας","आपका सहायक","Su asistente"],
+["Compare options","比较选项","比較選項","قارنوا الخيارات","So sánh lựa chọn","Confronta le opzioni","Σύγκριση επιλογών","विकल्पों की तुलना","Comparar opciones"],
+["Checklist","清单","清單","قائمة المهام","Danh sách việc cần làm","Lista di controllo","Λίστα ελέγχου","चेकलिस्ट","Lista de tareas"],
+["Talk to an adviser","联系顾问","聯絡顧問","تحدثوا مع مستشار","Nói chuyện với cố vấn","Parla con un consulente","Μιλήστε με σύμβουλο","सलाहकार से बात करें","Hable con un asesor"],
+["Languages","语言","語言","اللغات","Ngôn ngữ","Lingue","Γλώσσες","भाषाएँ","Idiomas"],
+["Help and support","帮助与支持","幫助與支援","المساعدة والدعم","Trợ giúp và hỗ trợ","Aiuto e assistenza","Βοήθεια και υποστήριξη","मदद और सहायता","Ayuda y soporte"],
+["Start now","立即开始","立即開始","ابدأ الآن","Bắt đầu ngay","Inizia ora","Ξεκινήστε τώρα","अभी शुरू करें","Empiece ahora"],
+["Get ready for your next chapter","迎接您的人生新篇章","迎接您的人生新篇章","استعدوا لفصلكم القادم","Sẵn sàng cho chương mới của bạn","Preparati al tuo prossimo capitolo","Ετοιμαστείτε για το επόμενο κεφάλαιό σας","अपने अगले अध्याय के लिए तैयार हों","Prepárese para su próximo capítulo"],
+["See how super investment options compare, answer 15 short questions, and chat with an assistant that helps you prepare for retirement.","了解养老金投资选项的对比，回答15个简短问题，并与助手聊天，帮助您为退休做好准备。","了解退休金投資選項的比較，回答15個簡短問題，並與助手聊天，幫助您為退休做好準備。","اطّلعوا على مقارنة خيارات الاستثمار في صندوق التقاعد، وأجيبوا عن 15 سؤالًا قصيرًا، وتحدثوا مع مساعد يساعدكم على الاستعداد للتقاعد.","Xem so sánh các lựa chọn đầu tư super, trả lời 15 câu hỏi ngắn và trò chuyện với trợ lý giúp bạn chuẩn bị nghỉ hưu.","Scopri come si confrontano le opzioni di investimento della super, rispondi a 15 brevi domande e parla con un assistente che ti aiuta a prepararti alla pensione.","Δείτε πώς συγκρίνονται οι επιλογές επένδυσης του super, απαντήστε σε 15 σύντομες ερωτήσεις και συζητήστε με έναν βοηθό που σας βοηθά να προετοιμαστείτε για τη συνταξιοδότηση.","देखें कि सुपर निवेश विकल्पों की तुलना कैसे होती है, 15 छोटे प्रश्नों के उत्तर दें, और ऐसे सहायक से बात करें जो रिटायरमेंट की तैयारी में आपकी मदद करता है।","Vea cómo se comparan las opciones de inversión de su super, responda 15 preguntas breves y converse con un asistente que le ayuda a prepararse para la jubilación."],
+["Start the quiz","开始测验","開始測驗","ابدأ الاختبار","Bắt đầu bài trắc nghiệm","Inizia il quiz","Ξεκινήστε το κουίζ","क्विज़ शुरू करें","Empezar el cuestionario"],
+["Fifteen questions about your retirement plans","关于您退休计划的十五个问题","關於您退休計劃的十五個問題","خمسة عشر سؤالًا عن خطط تقاعدكم","Mười lăm câu hỏi về kế hoạch nghỉ hưu của bạn","Quindici domande sui tuoi piani di pensione","Δεκαπέντε ερωτήσεις για τα σχέδιά σας συνταξιοδότησης","आपकी रिटायरमेंट योजनाओं के बारे में पंद्रह प्रश्न","Quince preguntas sobre sus planes de jubilación"],
+["Compare investment options","比较投资选项","比較投資選項","قارنوا خيارات الاستثمار","So sánh các lựa chọn đầu tư","Confronta le opzioni di investimento","Σύγκριση επιλογών επένδυσης","निवेश विकल्पों की तुलना करें","Compare opciones de inversión"],
+["Your retirement checklist","您的退休清单","您的退休清單","قائمة مهام تقاعدكم","Danh sách việc cần làm khi nghỉ hưu","La tua lista per la pensione","Η λίστα ελέγχου της συνταξιοδότησής σας","आपकी रिटायरमेंट चेकलिस्ट","Su lista de tareas para la jubilación"],
+["Turning your super into income","将您的养老金转化为收入","將您的退休金轉化為收入","تحويل مدخراتكم التقاعدية إلى دخل","Biến quỹ super thành thu nhập","Trasformare la super in reddito","Μετατρέψτε το super σας σε εισόδημα","अपने सुपर को आय में बदलना","Convertir su super en ingresos"],
+["Talk to a person who speaks your language","与会说您语言的人交谈","與說您語言的人交談","تحدثوا مع شخص يتحدث لغتكم","Nói chuyện với người nói ngôn ngữ của bạn","Parla con una persona che parla la tua lingua","Μιλήστε με άτομο που μιλά τη γλώσσα σας","अपनी भाषा बोलने वाले व्यक्ति से बात करें","Hable con una persona que hable su idioma"],
+["Set your goals and timeline","设定目标和时间表","設定目標和時間表","حدّدوا أهدافكم وجدولكم الزمني","Đặt mục tiêu và mốc thời gian","Stabilisci obiettivi e tempi","Ορίστε στόχους και χρονοδιάγραμμα","लक्ष्य और समय-सीमा तय करें","Fije sus metas y plazos"],
+["Manage your super and savings","管理养老金和储蓄","管理退休金和儲蓄","أديروا صندوق تقاعدكم ومدخراتكم","Quản lý super và tiền tiết kiệm","Gestisci super e risparmi","Διαχειριστείτε το super και τις αποταμιεύσεις σας","अपने सुपर और बचत का प्रबंधन करें","Administre su super y sus ahorros"],
+["Check the Age Pension and support","了解老年金（Age Pension）及援助","了解老年金（Age Pension）及援助","تحققوا من معاش الشيخوخة (Age Pension) والدعم","Kiểm tra Age Pension (lương hưu tuổi già) và hỗ trợ","Verifica la Age Pension e i sostegni","Ελέγξτε την Age Pension και τα επιδόματα","Age Pension और सहायता की जाँच करें","Revise la Age Pension y otras ayudas"],
+["Sort out legal and admin details","处理法律和行政事项","處理法律和行政事項","رتّبوا الأمور القانونية والإدارية","Hoàn tất các thủ tục pháp lý và hành chính","Sistema gli aspetti legali e amministrativi","Τακτοποιήστε νομικά και διοικητικά θέματα","कानूनी और प्रशासनिक काम निपटाएँ","Resuelva los trámites legales y administrativos"],
+["Organise your finances and spending","整理财务和开支","整理財務和開支","نظّموا أموركم المالية ونفقاتكم","Sắp xếp tài chính và chi tiêu","Organizza finanze e spese","Οργανώστε τα οικονομικά και τα έξοδά σας","अपने वित्त और खर्चों को व्यवस्थित करें","Organice sus finanzas y gastos"],
+["A lump sum","一次性领取","一次性提取","مبلغ مقطوع","Một khoản một lần","Un capitale unico","Εφάπαξ ποσό","एकमुश्त राशि","Un pago único"],
+["A flexible income stream","灵活的收入流","靈活的收入流","دخل مرن","Dòng thu nhập linh hoạt","Un reddito flessibile","Ευέλικτο εισόδημα","लचीली आय धारा","Un ingreso flexible"],
+["A lifetime income","终身收入","終身收入","دخل مدى الحياة","Thu nhập trọn đời","Un reddito a vita","Εισόδημα εφ’ όρου ζωής","आजीवन आय","Un ingreso de por vida"],
+["Request a call back","请求回电","請求回電","اطلبوا اتصالًا","Yêu cầu gọi lại","Richiedi una chiamata","Ζητήστε κλήση","कॉल बैक का अनुरोध करें","Solicitar una llamada"],
+["Your language","您的语言","您的語言","لغتكم","Ngôn ngữ của bạn","La tua lingua","Η γλώσσα σας","आपकी भाषा","Su idioma"],
+["Best time to call","最佳通话时间","最佳通話時間","أفضل وقت للاتصال","Thời gian gọi tốt nhất","Orario migliore per chiamare","Καλύτερη ώρα για κλήση","कॉल करने का सबसे अच्छा समय","Mejor hora para llamar"],
+["Your phone number","您的电话号码","您的電話號碼","رقم هاتفكم","Số điện thoại của bạn","Il tuo numero di telefono","Ο αριθμός τηλεφώνου σας","आपका फ़ोन नंबर","Su número de teléfono"]
+,["I’m interested in…","我感兴趣的是…","我感興趣的是…","أنا مهتم بـ…","Tôi quan tâm đến…","Mi interessa…","Με ενδιαφέρει…","मुझे रुचि है…","Me interesa…"],
+["What we offer","我们提供的服务","我們提供的服務","ما نقدّمه","Chúng tôi cung cấp gì","Cosa offriamo","Τι προσφέρουμε","हम क्या देते हैं","Lo que ofrecemos"],
+["Why use Next Chapter","为什么选择 Next Chapter","為什麼選擇 Next Chapter","لماذا تستخدمون Next Chapter","Tại sao dùng Next Chapter","Perché usare Next Chapter","Γιατί να χρησιμοποιήσετε το Next Chapter","Next Chapter क्यों चुनें","Por qué usar Next Chapter"],
+["Why use Next Chapter?","为什么选择 Next Chapter？","為什麼選擇 Next Chapter？","لماذا تستخدمون Next Chapter؟","Tại sao dùng Next Chapter?","Perché usare Next Chapter?","Γιατί να χρησιμοποιήσετε το Next Chapter;","Next Chapter क्यों चुनें?","¿Por qué usar Next Chapter?"],
+["Learn","了解","了解","تعلّموا","Tìm hiểu","Scopri","Μάθετε","सीखें","Aprender"],
+["Learn more","了解更多","了解更多","اعرفوا المزيد","Tìm hiểu thêm","Scopri di più","Μάθετε περισσότερα","और जानें","Más información"],
+["Are you ready for your next chapter?","您准备好迎接人生新篇章了吗？","您準備好迎接人生新篇章了嗎？","هل أنتم مستعدون لفصلكم القادم؟","Bạn đã sẵn sàng cho chương mới chưa?","Sei pronto per il tuo prossimo capitolo?","Είστε έτοιμοι για το επόμενο κεφάλαιό σας;","क्या आप अपने अगले अध्याय के लिए तैयार हैं?","¿Está listo para su próximo capítulo?"]
+,["Choose your language","请选择您的语言","請選擇您的語言","اختاروا لغتكم","Chọn ngôn ngữ của bạn","Scegli la tua lingua","Επιλέξτε τη γλώσσα σας","अपनी भाषा चुनें","Elija su idioma"],
+["Our purpose is to help Australians move from planning to confident action","我们的宗旨是帮助澳大利亚人从规划迈向有信心的行动","我們的宗旨是幫助澳洲人從規劃邁向有信心的行動","هدفنا مساعدة الأستراليين على الانتقال من التخطيط إلى العمل بثقة","Mục đích của chúng tôi là giúp người Úc chuyển từ lập kế hoạch sang hành động một cách tự tin","Il nostro scopo è aiutare gli australiani a passare dalla pianificazione all’azione con fiducia","Ο σκοπός μας είναι να βοηθήσουμε τους Αυστραλούς να περάσουν από τον σχεδιασμό στη βέβαιη δράση","हमारा उद्देश्य ऑस्ट्रेलियाई लोगों को योजना बनाने से आत्मविश्वास के साथ कदम उठाने तक पहुँचाने में मदद करना है","Nuestro propósito es ayudar a los australianos a pasar de la planificación a la acción con confianza"]
+,["Individual", "个人", "個人", "الأفراد", "Cá nhân", "Privati", "Ιδιώτες", "व्यक्तिगत", "Particulares"],
+["Family and carers", "家人和照顾者", "家人和照顧者", "العائلة ومقدمو الرعاية", "Gia đình và người chăm sóc", "Famiglia e assistenti", "Οικογένεια και φροντιστές", "परिवार और देखभालकर्ता", "Familiares y cuidadores"],
+["Adviser", "顾问", "顧問", "المستشارون", "Cố vấn", "Consulenti", "Σύμβουλοι", "सलाहकार", "Asesores"],
+["Articles", "文章", "文章", "مقالات", "Bài viết", "Articoli", "Άρθρα", "लेख", "Artículos"],
+["Contact us", "联系我们", "聯絡我們", "اتصلوا بنا", "Liên hệ chúng tôi", "Contattaci", "Επικοινωνήστε μαζί μας", "हमसे संपर्क करें", "Contáctenos"],
+["Search", "搜索", "搜尋", "بحث", "Tìm kiếm", "Cerca", "Αναζήτηση", "खोजें", "Buscar"],
+["Getting ready for retirement", "为退休做准备", "為退休做準備", "الاستعداد للتقاعد", "Chuẩn bị nghỉ hưu", "Prepararsi alla pensione", "Προετοιμασία για τη συνταξιοδότηση", "रिटायरमेंट की तैयारी", "Prepararse para la jubilación"],
+["Planning my retirement income", "规划我的退休收入", "規劃我的退休收入", "التخطيط لدخل تقاعدي", "Lập kế hoạch thu nhập khi nghỉ hưu", "Pianificare il mio reddito da pensione", "Σχεδιασμός του εισοδήματός μου στη συνταξιοδότηση", "रिटायरमेंट आय की योजना", "Planificar mis ingresos de jubilación"],
+["Planning for aged care", "规划养老护理", "規劃安老護理", "التخطيط لرعاية المسنين", "Lập kế hoạch chăm sóc người cao tuổi", "Pianificare l’assistenza agli anziani", "Σχεδιασμός για τη φροντίδα ηλικιωμένων", "बुज़ुर्ग देखभाल की योजना", "Planificar los cuidados para mayores"],
+["Retirement quiz", "退休测验", "退休測驗", "اختبار التقاعد", "Bài trắc nghiệm nghỉ hưu", "Quiz sulla pensione", "Κουίζ συνταξιοδότησης", "रिटायरमेंट क्विज़", "Cuestionario de jubilación"],
+["Retirement checklist", "退休清单", "退休清單", "قائمة مهام التقاعد", "Danh sách việc cần làm khi nghỉ hưu", "Lista per la pensione", "Λίστα ελέγχου συνταξιοδότησης", "रिटायरमेंट चेकलिस्ट", "Lista de tareas de jubilación"],
+["Super investment options", "养老金投资选项", "退休金投資選項", "خيارات الاستثمار في صندوق التقاعد", "Các lựa chọn đầu tư super", "Opzioni di investimento della super", "Επιλογές επένδυσης του super", "सुपर निवेश विकल्प", "Opciones de inversión del super"],
+["Age Pension and eligibility", "老年金及申请资格", "老年金及申請資格", "معاش الشيخوخة وأهلية الحصول عليه", "Age Pension và điều kiện hưởng", "Age Pension e requisiti", "Age Pension και προϋποθέσεις", "Age Pension और पात्रता", "Age Pension y requisitos"],
+["Answer 15 short questions and get a suggested investment option to discuss, plus a timetable of small steps for the weeks and months ahead.", "回答15个简短问题，获得一个可供讨论的投资选项建议，以及未来数周和数月的小步骤时间表。", "回答15個簡短問題，獲得一個可供討論的投資選項建議，以及未來數星期和數月的小步驟時間表。", "أجيبوا عن 15 سؤالًا قصيرًا واحصلوا على خيار استثماري مقترح لمناقشته، إضافةً إلى جدول زمني بخطوات صغيرة للأسابيع والأشهر القادمة.", "Trả lời 15 câu hỏi ngắn để nhận gợi ý một lựa chọn đầu tư để thảo luận, cùng lịch trình các bước nhỏ cho những tuần và tháng tới.", "Rispondi a 15 brevi domande e ricevi un’opzione di investimento da discutere, insieme a un calendario di piccoli passi per le prossime settimane e mesi.", "Απαντήστε σε 15 σύντομες ερωτήσεις και λάβετε μια προτεινόμενη επιλογή επένδυσης για συζήτηση, μαζί με ένα χρονοδιάγραμμα μικρών βημάτων για τις επόμενες εβδομάδες και μήνες.", "15 छोटे प्रश्नों के उत्तर दें और चर्चा के लिए एक सुझाया गया निवेश विकल्प पाएँ, साथ ही आने वाले हफ़्तों और महीनों के लिए छोटे कदमों की समय-सारणी।", "Responda 15 preguntas breves y reciba una opción de inversión sugerida para comentar, además de un calendario de pequeños pasos para las próximas semanas y meses."],
+["Everything you need to get from thinking about retirement to taking the next step.", "从考虑退休到迈出下一步，您所需的一切。", "從考慮退休到邁出下一步，您所需的一切。", "كل ما تحتاجون إليه للانتقال من التفكير في التقاعد إلى الخطوة التالية.", "Mọi thứ bạn cần để chuyển từ suy nghĩ về nghỉ hưu sang bước tiếp theo.", "Tutto ciò che serve per passare dal pensare alla pensione al fare il passo successivo.", "Όλα όσα χρειάζεστε για να περάσετε από τη σκέψη της συνταξιοδότησης στο επόμενο βήμα.", "रिटायरमेंट के बारे में सोचने से अगला कदम उठाने तक आपको जो कुछ चाहिए।", "Todo lo que necesita para pasar de pensar en la jubilación a dar el siguiente paso."],
+["Answer 15 questions and get a personal timetable of next steps.", "回答15个问题，获得个人化的后续步骤时间表。", "回答15個問題，獲得個人化的後續步驟時間表。", "أجيبوا عن 15 سؤالًا واحصلوا على جدول زمني شخصي للخطوات التالية.", "Trả lời 15 câu hỏi và nhận lịch trình cá nhân cho các bước tiếp theo.", "Rispondi a 15 domande e ricevi un calendario personale dei prossimi passi.", "Απαντήστε σε 15 ερωτήσεις και λάβετε ένα προσωπικό χρονοδιάγραμμα επόμενων βημάτων.", "15 प्रश्नों के उत्तर दें और अगले कदमों की अपनी समय-सारणी पाएँ।", "Responda 15 preguntas y reciba un calendario personal de próximos pasos."],
+["Get answers, check-ins and a plan, by typing or by speaking.", "通过打字或语音，获得解答、定期关怀和计划。", "透過打字或語音，獲得解答、定期關懷和計劃。", "احصلوا على إجابات ومتابعات وخطة، بالكتابة أو بالتحدث.", "Nhận câu trả lời, các lần hỏi thăm và một kế hoạch, bằng cách gõ hoặc nói.", "Ottieni risposte, controlli periodici e un piano, scrivendo o parlando.", "Λάβετε απαντήσεις, τακτικούς ελέγχους και πρόγραμμα, πληκτρολογώντας ή μιλώντας.", "टाइप करके या बोलकर जवाब, नियमित जाँच और योजना पाएँ।", "Obtenga respuestas, seguimientos y un plan, escribiendo o hablando."],
+["6.0% to 12.4%", "6.0% 至 12.4%", "6.0% 至 12.4%", "من 6.0% إلى 12.4%", "6.0% đến 12.4%", "Dal 6.0% al 12.4%", "Από 6.0% έως 12.4%", "6.0% से 12.4%", "Del 6.0% al 12.4%"],
+["Median returns for the five main option types, year to June 2026.", "五种主要选项类型的中位数回报，截至2026年6月的一年。", "五種主要選項類型的中位數回報，截至2026年6月的一年。", "متوسط العوائد لأنواع الخيارات الخمسة الرئيسية، للسنة المنتهية في يونيو 2026.", "Lợi suất trung vị của năm loại lựa chọn chính, trong năm đến tháng 6 năm 2026.", "Rendimenti mediani dei cinque principali tipi di opzione, nell’anno fino a giugno 2026.", "Διάμεσες αποδόσεις για τους πέντε βασικούς τύπους επιλογών, για το έτος έως τον Ιούνιο 2026.", "पाँच मुख्य विकल्प प्रकारों के औसत (मध्यक) रिटर्न, जून 2026 तक के वर्ष में।", "Rentabilidades medianas de los cinco tipos de opción principales, en el año hasta junio de 2026."],
+["A lump sum, a flexible income stream or a lifetime income. Many people mix them.", "一次性领取、灵活的收入流或终身收入。许多人会组合使用。", "一次性提取、靈活的收入流或終身收入。許多人會組合使用。", "مبلغ مقطوع أو دخل مرن أو دخل مدى الحياة. كثيرون يجمعون بينها.", "Một khoản một lần, dòng thu nhập linh hoạt hoặc thu nhập trọn đời. Nhiều người kết hợp chúng.", "Un capitale unico, un reddito flessibile o un reddito a vita. Molti li combinano.", "Εφάπαξ ποσό, ευέλικτο εισόδημα ή εισόδημα εφ’ όρου ζωής. Πολλοί τα συνδυάζουν.", "एकमुश्त राशि, लचीली आय धारा या आजीवन आय। कई लोग इन्हें मिलाकर इस्तेमाल करते हैं।", "Un pago único, un ingreso flexible o un ingreso de por vida. Muchas personas los combinan."],
+["Request a call back from someone who speaks your language.", "请会说您语言的人回电给您。", "請說您語言的人回電給您。", "اطلبوا اتصالًا من شخص يتحدث لغتكم.", "Yêu cầu người nói ngôn ngữ của bạn gọi lại.", "Richiedi di essere richiamato da una persona che parla la tua lingua.", "Ζητήστε να σας καλέσει κάποιος που μιλά τη γλώσσα σας.", "अपनी भाषा बोलने वाले किसी व्यक्ति से कॉल बैक का अनुरोध करें।", "Solicite una llamada de alguien que hable su idioma."],
+["Read the whole site in Chinese, Arabic, Vietnamese, Italian, Greek, Hindi or Spanish.", "用中文、阿拉伯语、越南语、意大利语、希腊语、印地语或西班牙语阅读整个网站。", "用中文、阿拉伯文、越南文、意大利文、希臘文、印地文或西班牙文閱讀整個網站。", "اقرأوا الموقع كاملًا بالصينية أو العربية أو الفيتنامية أو الإيطالية أو اليونانية أو الهندية أو الإسبانية.", "Đọc toàn bộ trang web bằng tiếng Trung, Ả Rập, Việt, Ý, Hy Lạp, Hindi hoặc Tây Ban Nha.", "Leggi tutto il sito in cinese, arabo, vietnamita, italiano, greco, hindi o spagnolo.", "Διαβάστε ολόκληρο τον ιστότοπο στα κινεζικά, αραβικά, βιετναμέζικα, ιταλικά, ελληνικά, χίντι ή ισπανικά.", "पूरी साइट चीनी, अरबी, वियतनामी, इतालवी, यूनानी, हिंदी या स्पेनिश में पढ़ें।", "Lea todo el sitio en chino, árabe, vietnamita, italiano, griego, hindi o español."],
+["When you stop work, your super needs to pay you regularly. There are three common ways, and many people combine them.", "停止工作后，您的养老金需要定期给您发放收入。常见的方式有三种，许多人会组合使用。", "停止工作後，您的退休金需要定期為您提供收入。常見的方式有三種，許多人會組合使用。", "عندما تتوقفون عن العمل، يجب أن يدفع لكم صندوق تقاعدكم بانتظام. هناك ثلاث طرق شائعة، ويجمع كثيرون بينها.", "Khi bạn ngừng làm việc, quỹ super cần chi trả cho bạn đều đặn. Có ba cách phổ biến và nhiều người kết hợp chúng.", "Quando smetti di lavorare, la tua super deve pagarti regolarmente. Ci sono tre modi comuni e molti li combinano.", "Όταν σταματήσετε να εργάζεστε, το super σας πρέπει να σας πληρώνει τακτικά. Υπάρχουν τρεις συνηθισμένοι τρόποι και πολλοί τους συνδυάζουν.", "काम बंद करने के बाद आपके सुपर को नियमित रूप से आपको भुगतान करना होता है। इसके तीन आम तरीके हैं, और कई लोग इन्हें मिलाकर अपनाते हैं।", "Cuando deja de trabajar, su super necesita pagarle con regularidad. Hay tres formas comunes y muchas personas las combinan."],
+["Take some or all of your super as cash. You decide how to spend it, but it’s up to you to make it last.", "将部分或全部养老金以现金形式提取。如何使用由您决定，但要让它够用需要您自己安排。", "將部分或全部退休金以現金形式提取。如何使用由您決定，但要讓它夠用需要您自己安排。", "خذوا جزءًا من صندوق تقاعدكم أو كله نقدًا. أنتم تقررون كيف تنفقونه، لكن مسؤولية جعله يكفي تقع عليكم.", "Rút một phần hoặc toàn bộ super bằng tiền mặt. Bạn quyết định cách chi tiêu, nhưng bạn phải tự lo để số tiền đủ dùng lâu dài.", "Ritira in contanti una parte o tutta la super. Decidi tu come spenderla, ma sta a te farla durare.", "Πάρτε μέρος ή όλο το super σας σε μετρητά. Εσείς αποφασίζετε πώς θα τα ξοδέψετε, αλλά εξαρτάται από εσάς να διαρκέσουν.", "अपने सुपर का कुछ या पूरा हिस्सा नकद के रूप में लें। खर्च कैसे करना है यह आप तय करते हैं, पर उसे लंबे समय तक चलाना आपकी ज़िम्मेदारी है।", "Retire parte o todo su super en efectivo. Usted decide cómo gastarlo, pero le corresponde a usted hacer que dure."],
+["Your money stays invested and you choose your payments. It can rise or fall with markets, and the balance can run out.", "您的资金继续投资，由您选择领取金额。它会随市场涨跌，余额也可能耗尽。", "您的資金繼續投資，由您選擇領取金額。它會隨市場升跌，餘額也可能耗盡。", "تبقى أموالكم مستثمرة وتختارون دفعاتكم. قد ترتفع أو تنخفض مع الأسواق، وقد ينفد الرصيد.", "Tiền của bạn vẫn được đầu tư và bạn chọn khoản nhận. Số dư có thể tăng giảm theo thị trường và có thể cạn.", "Il tuo denaro resta investito e scegli tu i pagamenti. Può salire o scendere con i mercati e il saldo può esaurirsi.", "Τα χρήματά σας παραμένουν επενδυμένα και εσείς επιλέγετε τις πληρωμές. Μπορεί να ανεβαίνει ή να πέφτει με τις αγορές και το υπόλοιπο μπορεί να εξαντληθεί.", "आपका पैसा निवेशित रहता है और भुगतान आप चुनते हैं। यह बाज़ार के साथ बढ़-घट सकता है, और शेष राशि खत्म भी हो सकती है।", "Su dinero sigue invertido y usted elige sus pagos. Puede subir o bajar con los mercados, y el saldo puede agotarse."],
+["Regular payments for as long as you live, however long that is. It gives certainty, but it’s less flexible and you often can’t take the money back out as a lump sum.", "只要您在世就会定期领取，无论多久。它带来确定性，但灵活性较低，而且通常无法将资金一次性取回。", "只要您在世就會定期領取，無論多久。它帶來確定性，但靈活性較低，而且通常無法將資金一次性取回。", "دفعات منتظمة طالما أنتم على قيد الحياة، مهما طال ذلك. يمنح اليقين، لكنه أقل مرونة وغالبًا لا يمكنكم سحب المال دفعة واحدة.", "Khoản chi trả đều đặn suốt đời bạn, dù bao lâu. Mang lại sự chắc chắn nhưng kém linh hoạt, và bạn thường không thể rút lại tiền thành một khoản.", "Pagamenti regolari finché vivi, per quanto a lungo. Dà certezza, ma è meno flessibile e spesso non puoi ritirare il capitale in un’unica soluzione.", "Τακτικές πληρωμές για όσο ζείτε, όσο κι αν διαρκέσει. Προσφέρει βεβαιότητα, αλλά είναι λιγότερο ευέλικτο και συχνά δεν μπορείτε να πάρετε πίσω τα χρήματα εφάπαξ.", "जब तक आप जीवित हैं, चाहे कितने भी समय तक, नियमित भुगतान। यह निश्चितता देता है, पर कम लचीला है और अक्सर आप पैसा एकमुश्त वापस नहीं निकाल सकते।", "Pagos regulares mientras viva, sin importar cuánto tiempo sea. Da certeza, pero es menos flexible y a menudo no puede retirar el dinero de una sola vez."],
+["The Age Pension can sit alongside any of these if you’re eligible.", "如果符合资格，老年金可与其中任何一种并用。", "如果符合資格，老年金可與其中任何一種並用。", "يمكن الجمع بين معاش الشيخوخة وأي منها إذا كنتم مؤهلين.", "Nếu đủ điều kiện, Age Pension có thể được nhận cùng với bất kỳ cách nào trong số này.", "La Age Pension può affiancarsi a ognuna di queste se ne hai diritto.", "Η Age Pension μπορεί να συνυπάρχει με οποιοδήποτε από αυτά, αν πληροίτε τις προϋποθέσεις.", "यदि आप पात्र हैं तो Age Pension इनमें से किसी के साथ मिल सकती है।", "La Age Pension puede combinarse con cualquiera de estas opciones si cumple los requisitos."],
+["Ask the assistant which mix to consider", "询问助手可考虑哪种组合", "詢問助手可考慮哪種組合", "اسألوا المساعد عن المزيج الذي يمكن النظر فيه", "Hỏi trợ lý nên cân nhắc cách kết hợp nào", "Chiedi all’assistente quale combinazione considerare", "Ρωτήστε τον βοηθό ποιον συνδυασμό να εξετάσετε", "सहायक से पूछें कि कौन सा मेल अपनाएँ", "Pregunte al asistente qué combinación considerar"],
+["Prefer to speak with someone? Request a call back from a multilingual adviser.", "想与人交谈？请多语种顾问回电给您。", "想與人交談？請多語言顧問回電給您。", "تفضلون التحدث مع شخص؟ اطلبوا اتصالًا من مستشار متعدد اللغات.", "Muốn nói chuyện với một người? Hãy yêu cầu cố vấn đa ngôn ngữ gọi lại.", "Preferisci parlare con qualcuno? Richiedi una chiamata da un consulente multilingue.", "Προτιμάτε να μιλήσετε με κάποιον; Ζητήστε κλήση από πολύγλωσσο σύμβουλο.", "किसी से बात करना पसंद है? बहुभाषी सलाहकार से कॉल बैक का अनुरोध करें।", "¿Prefiere hablar con alguien? Solicite una llamada de un asesor multilingüe."],
+["Morning", "上午", "上午", "صباحًا", "Buổi sáng", "Mattina", "Πρωί", "सुबह", "Mañana"],
+["Afternoon", "下午", "下午", "بعد الظهر", "Buổi chiều", "Pomeriggio", "Απόγευμα", "दोपहर", "Tarde"],
+["Evening", "晚上", "晚上", "مساءً", "Buổi tối", "Sera", "Βράδυ", "शाम", "Noche"],
+["Demo only: no details are sent or stored.", "仅为演示：不会发送或保存任何资料。", "僅為示範：不會傳送或儲存任何資料。", "عرض تجريبي فقط: لا يتم إرسال أي تفاصيل أو تخزينها.", "Chỉ là bản demo: không có thông tin nào được gửi hoặc lưu.", "Solo dimostrazione: nessun dato viene inviato o conservato.", "Μόνο επίδειξη: δεν αποστέλλονται ούτε αποθηκεύονται στοιχεία.", "केवल डेमो: कोई जानकारी भेजी या सहेजी नहीं जाती।", "Solo demostración: no se envía ni se guarda ningún dato."],
+["How it works", "使用方式", "使用方式", "كيف يعمل", "Cách hoạt động", "Come funziona", "Πώς λειτουργεί", "यह कैसे काम करता है", "Cómo funciona"],
+["Plain-English questions, a plan you can follow, and an assistant you can type to or talk to.", "通俗易懂的问题、可遵循的计划，以及可以打字或语音交流的助手。", "淺白易明的問題、可跟隨的計劃，以及可以打字或語音交流的助手。", "أسئلة بلغة بسيطة، وخطة يمكنكم اتباعها، ومساعد يمكنكم الكتابة إليه أو التحدث معه.", "Câu hỏi dễ hiểu, kế hoạch bạn có thể làm theo và một trợ lý để bạn gõ hoặc trò chuyện.", "Domande in linguaggio semplice, un piano da seguire e un assistente con cui scrivere o parlare.", "Ερωτήσεις σε απλή γλώσσα, ένα πλάνο που μπορείτε να ακολουθήσετε και ένας βοηθός στον οποίο μπορείτε να γράψετε ή να μιλήσετε.", "सरल भाषा में प्रश्न, अपनाने योग्य योजना, और एक सहायक जिससे आप टाइप करके या बोलकर बात कर सकते हैं।", "Preguntas en lenguaje sencillo, un plan que puede seguir y un asistente al que puede escribir o hablar."],
+["Built for everyone", "为所有人而设计", "為所有人而設計", "مصمّم للجميع", "Dành cho mọi người", "Pensato per tutti", "Φτιαγμένο για όλους", "सभी के लिए बनाया गया", "Hecho para todos"],
+["Large text, voice, eight languages and a call back from a real person.", "大字体、语音、八种语言，以及真人回电。", "大字體、語音、八種語言，以及真人回電。", "نص كبير وصوت وثماني لغات واتصال من شخص حقيقي.", "Chữ lớn, giọng nói, tám ngôn ngữ và cuộc gọi lại từ người thật.", "Testo grande, voce, otto lingue e una chiamata da una persona vera.", "Μεγάλο κείμενο, φωνή, οκτώ γλώσσες και κλήση από πραγματικό άτομο.", "बड़े अक्षर, आवाज़, आठ भाषाएँ और असली व्यक्ति से कॉल बैक।", "Texto grande, voz, ocho idiomas y una llamada de una persona real."],
+["Want more information?", "想了解更多信息？", "想了解更多資訊？", "هل تريدون مزيدًا من المعلومات؟", "Bạn muốn biết thêm thông tin?", "Vuoi più informazioni?", "Θέλετε περισσότερες πληροφορίες;", "और जानकारी चाहिए?", "¿Quiere más información?"],
+["Take a look at the ways you can get extra information and support.", "看看您可以通过哪些方式获得更多信息和支持。", "看看您可以透過哪些方式獲得更多資訊和支援。", "اطلعوا على طرق الحصول على معلومات ودعم إضافيين.", "Xem các cách bạn có thể nhận thêm thông tin và hỗ trợ.", "Scopri come ottenere ulteriori informazioni e supporto.", "Δείτε τους τρόπους να λάβετε επιπλέον πληροφορίες και υποστήριξη.", "अतिरिक्त जानकारी और सहायता पाने के तरीके देखें।", "Consulte las formas de obtener más información y apoyo."],
+["Customer service", "客户服务", "客戶服務", "خدمة العملاء", "Dịch vụ khách hàng", "Servizio clienti", "Εξυπηρέτηση πελατών", "ग्राहक सेवा", "Atención al cliente"],
+["Ask a question or request a call back from an adviser who speaks your language.", "提出问题，或请会说您语言的顾问回电。", "提出問題，或請說您語言的顧問回電。", "اطرحوا سؤالًا أو اطلبوا اتصالًا من مستشار يتحدث لغتكم.", "Đặt câu hỏi hoặc yêu cầu cố vấn nói ngôn ngữ của bạn gọi lại.", "Fai una domanda o richiedi una chiamata da un consulente che parla la tua lingua.", "Κάντε μια ερώτηση ή ζητήστε κλήση από σύμβουλο που μιλά τη γλώσσα σας.", "प्रश्न पूछें या अपनी भाषा बोलने वाले सलाहकार से कॉल बैक का अनुरोध करें।", "Haga una pregunta o solicite una llamada de un asesor que hable su idioma."],
+["Start planning for retirement", "开始规划退休", "開始規劃退休", "ابدأوا التخطيط للتقاعد", "Bắt đầu lập kế hoạch nghỉ hưu", "Inizia a pianificare la pensione", "Ξεκινήστε να σχεδιάζετε τη συνταξιοδότηση", "रिटायरमेंट की योजना शुरू करें", "Empiece a planificar su jubilación"],
+["Everyone starts from a different place. Knowing the steps makes it easier to begin.", "每个人的起点不同。了解步骤会让开始变得更容易。", "每個人的起點不同。了解步驟會讓開始變得更容易。", "لكل شخص نقطة بداية مختلفة. معرفة الخطوات تجعل البدء أسهل.", "Mỗi người bắt đầu từ một điểm khác nhau. Biết các bước sẽ giúp bắt đầu dễ hơn.", "Ognuno parte da un punto diverso. Conoscere i passaggi rende più facile cominciare.", "Ο καθένας ξεκινά από διαφορετικό σημείο. Η γνώση των βημάτων κάνει την αρχή ευκολότερη.", "हर किसी की शुरुआत अलग होती है। कदमों को जानने से शुरू करना आसान हो जाता है।", "Cada persona parte de un lugar distinto. Conocer los pasos facilita empezar."],
+["Starting the conversation early helps you and your family make informed decisions.", "及早开始沟通，有助于您和家人做出明智的决定。", "及早開始溝通，有助您和家人作出明智的決定。", "بدء الحديث مبكرًا يساعدكم وعائلتكم على اتخاذ قرارات مدروسة.", "Bắt đầu trao đổi sớm giúp bạn và gia đình đưa ra quyết định sáng suốt.", "Iniziare presto il dialogo aiuta te e la tua famiglia a prendere decisioni informate.", "Η έγκαιρη έναρξη της συζήτησης βοηθά εσάς και την οικογένειά σας να πάρετε τεκμηριωμένες αποφάσεις.", "बातचीत जल्दी शुरू करने से आप और आपका परिवार सोच-समझकर निर्णय ले पाते हैं।", "Empezar la conversación pronto le ayuda a usted y a su familia a tomar decisiones informadas."],
+["Read more", "阅读更多", "閱讀更多", "اقرأوا المزيد", "Đọc thêm", "Leggi di più", "Διαβάστε περισσότερα", "और पढ़ें", "Leer más"],
+["Ask the assistant", "询问助手", "詢問助手", "اسألوا المساعد", "Hỏi trợ lý", "Chiedi all’assistente", "Ρωτήστε τον βοηθό", "सहायक से पूछें", "Pregunte al asistente"],
+["Subscribe to our newsletter", "订阅我们的通讯", "訂閱我們的通訊", "اشتركوا في نشرتنا الإخبارية", "Đăng ký nhận bản tin của chúng tôi", "Iscriviti alla nostra newsletter", "Εγγραφείτε στο ενημερωτικό μας δελτίο", "हमारे न्यूज़लेटर की सदस्यता लें", "Suscríbase a nuestro boletín"],
+["A free email for Australians planning their retirement or already retired.", "为正在规划退休或已退休的澳大利亚人提供的免费电子邮件。", "為正在規劃退休或已退休的澳洲人提供的免費電郵。", "رسالة بريد إلكتروني مجانية للأستراليين الذين يخططون لتقاعدهم أو المتقاعدين بالفعل.", "Email miễn phí dành cho người Úc đang lập kế hoạch nghỉ hưu hoặc đã nghỉ hưu.", "Un’email gratuita per gli australiani che pianificano la pensione o sono già in pensione.", "Ένα δωρεάν email για Αυστραλούς που σχεδιάζουν τη συνταξιοδότησή τους ή είναι ήδη συνταξιούχοι.", "रिटायरमेंट की योजना बना रहे या पहले से रिटायर ऑस्ट्रेलियाई लोगों के लिए एक मुफ़्त ईमेल।", "Un correo gratuito para australianos que planifican su jubilación o ya están jubilados."],
+["Subscribe", "订阅", "訂閱", "اشتراك", "Đăng ký", "Iscriviti", "Εγγραφή", "सदस्यता लें", "Suscribirse"],
+["Explore", "探索", "探索", "استكشفوا", "Khám phá", "Esplora", "Εξερευνήστε", "देखें", "Explorar"],
+["Support", "支持", "支援", "الدعم", "Hỗ trợ", "Supporto", "Υποστήριξη", "सहायता", "Soporte"],
+["Contact", "联系方式", "聯絡方式", "التواصل", "Liên hệ", "Contatti", "Επικοινωνία", "संपर्क", "Contacto"],
+["Phone:", "电话：", "電話：", "الهاتف:", "Điện thoại:", "Telefono:", "Τηλέφωνο:", "फ़ोन:", "Teléfono:"],
+["Email:", "电子邮件：", "電郵：", "البريد الإلكتروني:", "Email:", "Email:", "Email:", "ईमेल:", "Correo electrónico:"],
+["We acknowledge the Traditional Custodians of Country throughout Australia and pay our respects to Elders past and present.", "我们承认澳大利亚各地的传统守护者，并向过去和现在的长者致敬。", "我們承認澳洲各地的傳統守護者，並向過去和現在的長者致敬。", "نعترف بالحماة التقليديين للأرض في جميع أنحاء أستراليا ونحيي كبار السن من الماضي والحاضر.", "Chúng tôi ghi nhận những Người giám hộ truyền thống của vùng đất trên khắp nước Úc và bày tỏ sự kính trọng đối với các bậc trưởng lão trong quá khứ và hiện tại.", "Riconosciamo i Custodi Tradizionali della Terra in tutta l’Australia e rendiamo omaggio agli Anziani passati e presenti.", "Αναγνωρίζουμε τους Παραδοσιακούς Φύλακες της Γης σε όλη την Αυστραλία και αποτίουμε φόρο τιμής στους Πρεσβυτέρους του παρελθόντος και του παρόντος.", "हम पूरे ऑस्ट्रेलिया में भूमि के पारंपरिक संरक्षकों को स्वीकार करते हैं और अतीत तथा वर्तमान के बुज़ुर्गों का सम्मान करते हैं।", "Reconocemos a los Custodios Tradicionales de la tierra en toda Australia y rendimos homenaje a los Mayores del pasado y del presente."],
+["Conditions of use", "使用条款", "使用條款", "شروط الاستخدام", "Điều khoản sử dụng", "Condizioni d’uso", "Όροι χρήσης", "उपयोग की शर्तें", "Condiciones de uso"],
+["Disclaimer", "免责声明", "免責聲明", "إخلاء المسؤولية", "Tuyên bố miễn trừ trách nhiệm", "Avvertenze", "Αποποίηση ευθύνης", "अस्वीकरण", "Aviso legal"],
+["Financial services guide", "金融服务指南", "金融服務指南", "دليل الخدمات المالية", "Hướng dẫn dịch vụ tài chính", "Guida ai servizi finanziari", "Οδηγός χρηματοοικονομικών υπηρεσιών", "वित्तीय सेवा मार्गदर्शिका", "Guía de servicios financieros"],
+["Privacy", "隐私", "私隱", "الخصوصية", "Quyền riêng tư", "Privacy", "Απόρρητο", "गोपनीयता", "Privacidad"],
+["Accessibility", "无障碍", "無障礙", "إمكانية الوصول", "Khả năng tiếp cận", "Accessibilità", "Προσβασιμότητα", "सुलभता", "Accesibilidad"],
+["Find out where you stand", "了解您目前的情况", "了解您目前的情況", "اعرفوا أين تقفون", "Tìm hiểu bạn đang ở đâu", "Scopri a che punto sei", "Δείτε πού βρίσκεστε", "जानें कि आप कहाँ खड़े हैं", "Descubra dónde se encuentra"],
+["Help in your own words", "用您自己的话获得帮助", "用您自己的話獲得協助", "مساعدة بكلماتكم الخاصة", "Được giúp đỡ bằng lời của bạn", "Aiuto con parole tue", "Βοήθεια με δικά σας λόγια", "अपने शब्दों में मदद पाएँ", "Ayuda con sus propias palabras"],
+["Read the site in your language", "用您的语言阅读网站", "用您的語言閱讀網站", "اقرأوا الموقع بلغتكم", "Đọc trang web bằng ngôn ngữ của bạn", "Leggi il sito nella tua lingua", "Διαβάστε τον ιστότοπο στη γλώσσα σας", "साइट को अपनी भाषा में पढ़ें", "Lea el sitio en su idioma"],
+["Compare how options have performed", "比较各选项的表现", "比較各選項的表現", "قارنوا أداء الخيارات", "So sánh hiệu quả của các lựa chọn", "Confronta le performance delle opzioni", "Συγκρίνετε την απόδοση των επιλογών", "विकल्पों के प्रदर्शन की तुलना करें", "Compare el rendimiento de las opciones"],
+["Investment options", "投资选项", "投資選項", "خيارات الاستثمار", "Các lựa chọn đầu tư", "Opzioni di investimento", "Επιλογές επένδυσης", "निवेश विकल्प", "Opciones de inversión"],
+["Close", "关闭", "關閉", "إغلاق", "Đóng", "Chiudi", "Κλείσιμο", "बंद करें", "Cerrar"],
+["General information only, not financial advice.", "仅为一般信息，不构成财务建议。", "僅為一般資訊，不構成財務建議。", "معلومات عامة فقط وليست نصيحة مالية.", "Chỉ là thông tin chung, không phải tư vấn tài chính.", "Solo informazioni generali, non consulenza finanziaria.", "Μόνο γενικές πληροφορίες, όχι χρηματοοικονομική συμβουλή.", "केवल सामान्य जानकारी, वित्तीय सलाह नहीं।", "Solo información general, no asesoramiento financiero."],
+["Choose a target retirement date and the yearly income you’d like.", "选择目标退休日期和您希望的年收入。", "選擇目標退休日期和您希望的年收入。", "اختاروا موعدًا مستهدفًا للتقاعد والدخل السنوي الذي تريدونه.", "Chọn ngày nghỉ hưu mục tiêu và thu nhập hằng năm bạn muốn.", "Scegli una data di pensionamento e il reddito annuo che desideri.", "Επιλέξτε στόχο ημερομηνίας συνταξιοδότησης και το ετήσιο εισόδημα που θέλετε.", "रिटायरमेंट की लक्षित तिथि और अपनी पसंद की वार्षिक आय चुनें।", "Elija una fecha objetivo de jubilación y los ingresos anuales que desea."],
+["Find all your super accounts, check the fees and compare investment options.", "找出您所有的养老金账户，查看费用并比较投资选项。", "找出您所有的退休金戶口，查看費用並比較投資選項。", "اعثروا على جميع حسابات صندوق تقاعدكم، وراجعوا الرسوم وقارنوا خيارات الاستثمار.", "Tìm tất cả tài khoản super của bạn, kiểm tra phí và so sánh các lựa chọn đầu tư.", "Trova tutti i tuoi conti super, controlla le commissioni e confronta le opzioni di investimento.", "Βρείτε όλους τους λογαριασμούς super σας, ελέγξτε τα τέλη και συγκρίνετε επιλογές επένδυσης.", "अपने सभी सुपर खाते खोजें, शुल्क जाँचें और निवेश विकल्पों की तुलना करें।", "Encuentre todas sus cuentas de super, revise las comisiones y compare opciones de inversión."],
+["The Age Pension age is 67. Use the Services Australia estimator to see what you might receive.", "老年金年龄为67岁。使用 Services Australia 的估算工具查看您可能获得的金额。", "老年金年齡為67歲。使用 Services Australia 的估算工具查看您可能獲得的金額。", "سن معاش الشيخوخة هو 67. استخدموا أداة التقدير لدى Services Australia لمعرفة ما قد تحصلون عليه.", "Độ tuổi nhận Age Pension là 67. Dùng công cụ ước tính của Services Australia để xem bạn có thể nhận được bao nhiêu.", "L’età per la Age Pension è 67 anni. Usa lo strumento di stima di Services Australia per vedere cosa potresti ricevere.", "Η ηλικία για την Age Pension είναι τα 67. Χρησιμοποιήστε το εργαλείο εκτίμησης της Services Australia για να δείτε τι μπορεί να λάβετε.", "Age Pension की उम्र 67 वर्ष है। आप क्या पा सकते हैं, यह देखने के लिए Services Australia का अनुमान उपकरण इस्तेमाल करें।", "La edad para la Age Pension es 67 años. Use el estimador de Services Australia para ver qué podría recibir."],
+["Make or update your will, and check who is nominated as the beneficiary of your super.", "立遗嘱或更新遗嘱，并确认谁被指定为您养老金的受益人。", "立遺囑或更新遺囑，並確認誰被指定為您退休金的受益人。", "اكتبوا وصيتكم أو حدّثوها، وتحققوا من الشخص المعيّن مستفيدًا من صندوق تقاعدكم.", "Lập hoặc cập nhật di chúc và kiểm tra ai được chỉ định là người thụ hưởng super của bạn.", "Fai o aggiorna il testamento e controlla chi è indicato come beneficiario della tua super.", "Συντάξτε ή ενημερώστε τη διαθήκη σας και ελέγξτε ποιος ορίζεται ως δικαιούχος του super σας.", "अपनी वसीयत बनाएँ या अपडेट करें, और जाँचें कि आपके सुपर का लाभार्थी कौन नामित है।", "Haga o actualice su testamento y compruebe quién está designado como beneficiario de su super."],
+["List your regular income and expenses so you know what you’ll need each year.", "列出您的日常收入和支出，了解每年所需金额。", "列出您的日常收入和支出，了解每年所需金額。", "دوّنوا دخلكم ونفقاتكم المنتظمة لتعرفوا ما ستحتاجونه كل عام.", "Liệt kê thu nhập và chi tiêu thường xuyên để biết bạn cần bao nhiêu mỗi năm.", "Elenca entrate e spese regolari per sapere di cosa avrai bisogno ogni anno.", "Καταγράψτε τα τακτικά έσοδα και έξοδά σας ώστε να ξέρετε τι θα χρειάζεστε κάθε χρόνο.", "अपनी नियमित आय और खर्चों की सूची बनाएँ ताकि पता रहे कि हर साल आपको कितना चाहिए।", "Haga una lista de sus ingresos y gastos habituales para saber qué necesitará cada año."]
+];
+SD.forEach(r=>SC.forEach((c,i)=>TC.set(c+"|"+r[0],r[i+1])));
+function pageNodes(){
+const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>{const t=n.data.trim();if(!t||!/[A-Za-z]/.test(t)&&!NM.has(n))return 3;const p=n.parentElement;if(!p||p.closest(SKIP))return 3;const m=NM.get(n);return m&&n.data===m.t?3:1}});
+const a=[];while(w.nextNode())a.push(w.currentNode);return a;
+}
+function revert(){
+busy=true;TN.forEach(n=>{const m=NM.get(n);if(m&&n.data===m.t)n.data=m.o});TN=new Set();NM=new WeakMap();LG=null;
+setTimeout(()=>busy=false,0);
+}
+async function run(){
+if(!LG)return;
+if(running){rerun=true;return}
+running=true;
+try{
+const L0=LG,ns=pageNodes(),key=t=>L0.c+"|"+t;
+const need=[...new Set(ns.map(n=>n.data.trim()).filter(t=>!TC.has(key(t))))];
+for(let i=0;smp&&i<need.length;i+=50){
+const part=need.slice(i,i+50);
+const out=await smp.json(`Translate each string in this JSON array from English into ${EL[L0.c]} (language code ${L0.c}). Use plain, warm, respectful wording that suits older readers. Keep numbers, $ amounts, percentages, emoji and these names unchanged: Next Chapter, Chant West, SuperGuide, TIS National, Services Australia, myGov, Age Pension. Return only a JSON array of strings, the same length and order, with no other text.\n${JSON.stringify(part)}`,{modelTier:"quick"});
+part.forEach((t,j)=>TC.set(key(t),Array.isArray(out)&&typeof out[j]==="string"&&out[j]?out[j]:t));
+if(LG!==L0)return;
+}
+if(LG!==L0)return;
+busy=true;
+ns.forEach(n=>{const tr=TC.get(key(n.data.trim()));if(!tr)return;const lead=n.data.match(/^\s*/)[0],trail=n.data.match(/\s*$/)[0],o=NM.has(n)?NM.get(n).o:n.data;n.data=lead+tr+trail;NM.set(n,{o,t:n.data});TN.add(n)});
+setTimeout(()=>busy=false,0);
+}catch(e){
+const m=$("lmsg");m.textContent=e&&e.code==="not_granted"?"Translation permission was declined, so only the summary above is translated.":"The page couldn’t be translated just now. Please try again in a moment.";
+}finally{running=false;if(rerun){rerun=false;run()}}
+}
+async function pick(i){
+li=i;drawLang();
+const l=i<0?null:L[i],m=$("lmsg");
+revert();
+document.documentElement.lang=l?l.c:"en-AU";document.documentElement.dir=l&&l.d||"ltr";
+if(!l){m.textContent="";return}
+LG=l;
+if(smp===undefined){try{smp=(window.claude&&await claude.use("sample"))||false}catch(e){smp=false}}
+if(!smp){await run();m.textContent="Parts of the quiz and assistant are still in English in this view.";return}
+m.textContent=WT[l.c];
+await run();
+if(LG===l&&m.textContent===WT[l.c])m.textContent="";
+}
+new MutationObserver(()=>{if(!LG||busy)return;clearTimeout(tmr);tmr=setTimeout(run,500)}).observe(document.body,{childList:true,subtree:true,characterData:true});
+$("rprev").onclick=()=>$("rail").scrollBy({left:-290,behavior:"smooth"});
+$("rnext").onclick=()=>$("rail").scrollBy({left:290,behavior:"smooth"});
+$("nlGo").onclick=()=>{const m=$("nlM");m.textContent=/.+@.+/.test($("nlE").value)?"Thanks. This is a demo, so nothing was sent.":"Please enter a valid email address."};
+document.addEventListener("click",e=>{
+const b=e.target.closest(".dd>button");
+document.querySelectorAll(".dd.open").forEach(d=>{if(!b||d!==b.parentElement){d.classList.remove("open");d.firstElementChild.setAttribute("aria-expanded","false")}});
+if(b){const d=b.parentElement;d.classList.toggle("open");b.setAttribute("aria-expanded",d.classList.contains("open"))}
+const k=e.target.closest("[data-ask]");if(k){e.preventDefault();ask(k.dataset.ask)}
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".dd.open").forEach(d=>{d.classList.remove("open");d.firstElementChild.setAttribute("aria-expanded","false")})});
+const MD={
+quiz:{e:"Retirement quiz",t:"Find out where you stand",i:"Fifteen short questions about where you are now and what you want from retirement. It takes about five minutes and there are no wrong answers.",l:["Get a suggested investment option to discuss with your fund","Get a timetable of small steps for this week, this month and this year","Your answers aren’t saved or sent anywhere in this demo"],c:["Start the quiz","quiz"]},
+assistant:{e:"Your assistant",t:"Help in your own words",i:"Ask questions by typing or by speaking, and get plain-English answers and regular check-ins.",l:["Compare investment options and understand the risks","Get a plan you can follow, one small step at a time","Have replies read aloud to you"],c:["Open the assistant","assistant"]},
+options:{e:"Investment options",t:"Compare how options have performed",i:"See the five main types of super investment option side by side, from Conservative to All Growth.",l:["What each option holds, and who it tends to suit","Returns for the year to June 2026, the year to September 2026 and the latest quarter","A calculator showing what your balance would have gained or lost"],c:["Compare options","options"]},
+adviser:{e:"Talk to an adviser",t:"Speak to a person in your language",i:"Prefer a conversation to a screen? Ask for a call back.",l:["Choose your language and a time that suits you","Ask about your options, the Age Pension, or anything else","No need to use the app or the website"],c:["Request a call back","adviser"]},
+languages:{e:"Languages",t:"Read the site in your language",i:"Next Chapter is available in eight languages.",l:["Chinese (Simplified and Traditional), Arabic, Vietnamese, Italian, Greek, Hindi and Spanish","Menus, headings and buttons change instantly, and the rest is translated by AI where available","A free interpreter is available through TIS National on 131 450"],c:["Choose a language","languages"]},
+income:{e:"Retirement income",t:"Turning your super into income",i:"When you stop work, your super needs to pay you regularly. There are three common ways to do it, and many people combine them.",c:["Talk to an adviser","adviser"],s:["Ask the assistant","Explain lump sum versus lifetime income"]}
+};
+function incomeBody(){
+const C=[
+["A lump sum","Take some or all of your super as cash.","High: spend or invest it however you like.","Low: it’s up to you to make it last.","It may count towards the Age Pension assets test, and the tax rules depend on your age and fund."],
+["A flexible income stream","Your money stays invested and you choose your payments.","High: change your payments, within minimum yearly rules.","Medium: payments depend on markets, and the balance can run out.","A minimum amount must be paid each year, and because it stays invested it can rise and fall."],
+["A lifetime income","Regular payments for as long as you live, however long that is.","Lower: you often can’t take the money back out as a lump sum.","High: payments continue for life.","Compare fees and check whether payments rise with inflation. Read the Product Disclosure Statement."]];
+return `<div class="cmp">${C.map((c,i)=>`<article class="cp c${i}"><h3>${c[0]}</h3><p>${c[1]}</p><dl><dt>Flexibility</dt><dd>${c[2]}</dd><dt>Certainty</dt><dd>${c[3]}</dd><dt>Worth knowing</dt><dd>${c[4]}</dd></dl></article>`).join("")}</div><div class="mdn"><h3>One common approach</h3><p>Many people use a lifetime income to cover essentials like housing, food and health costs, keep a flexible income stream for extras such as travel, and hold some cash for emergencies. The right mix depends on your balance, health, other income and the Age Pension.</p></div><div class="mdn"><h3>The Age Pension</h3><p>If you’re eligible, the Age Pension can sit alongside any of these. Your super, and the way you take it, can affect how much you receive, so check before you decide.</p></div>`;
+}
+const md=$("md");
+function openInfo(k){
+const m=MD[k];if(!m)return;if(md.open)closeM();restore();
+$("mdB").innerHTML=`<header class="mdh"><div><p class="mde">${m.e}</p><h2 id="mdT">${m.t}</h2></div><button class="mdx" type="button" data-close aria-label="Close">✕</button></header><div class="mdc"><p class="mdi">${m.i}</p>${k==="income"?incomeBody():`<ul class="mdl">${m.l.map(x=>`<li>${x}</li>`).join("")}</ul>`}</div><div class="mdf"><div class="row"><button class="btn" type="button" data-go="${m.c[1]}">${m.c[0]}</button>${m.s?`<button class="btn ghost" type="button" data-ask2="${m.s[1]}">${m.s[0]}</button>`:""}<button class="btn ghost" type="button" data-close>Close</button></div><p class="note">General information only, not financial advice.</p></div>`;
+if(md.showModal)md.showModal();else md.setAttribute("open","");
+}
+function closeM(){if(md.close)md.close();else md.removeAttribute("open");restore()}
+document.addEventListener("click",e=>{
+const t=e.target;
+if(t===md||t.closest("[data-close]")){closeM();return}
+const g=t.closest("[data-go]");if(g){closeM();setTimeout(()=>{const x=$(g.dataset.go);x&&x.scrollIntoView()},60);return}
+const q=t.closest("[data-ask2]");if(q){closeM();ask(q.dataset.ask2);return}
+const c=t.closest(".rail .card");if(c){const b=c.querySelector("[data-modal]");if(b)openM(b.dataset.modal)}
+});
+let cur=null;
+function restore(){if(cur){cur.hidden=true;$("hold").appendChild(cur);cur=null}}
+md.addEventListener("close",restore);
+const PN={quiz:{p:"pn-quiz",e:"Retirement quiz",t:"Find out where you stand"},assistant:{p:"pn-assistant",e:"Your assistant",t:"Help in your own words"},languages:{p:"pn-languages",e:"Languages",t:"Read the site in your language"},options:{p:"pn-options",e:"Investment options",t:"Compare how options have performed"},checklist:{p:"pn-checklist",e:"Retirement checklist",t:"Your retirement checklist"}};
+function openM(k){
+if(!PN[k])return openInfo(k);
+if(md.open)closeM();
+const m=PN[k];
+$("mdB").innerHTML=`<header class="mdh"><div><p class="mde">${m.e}</p><h2 id="mdT">${m.t}</h2></div><button class="mdx" type="button" data-close aria-label="Close">✕</button></header><div class="mdc" id="mdSlot"></div><div class="mdf"><div class="row"><button class="btn ghost" type="button" data-close>Close</button></div><p class="note">General information only, not financial advice.</p></div>`;
+cur=$(m.p);$("mdSlot").appendChild(cur);cur.hidden=false;
+if(md.showModal)md.showModal();else md.setAttribute("open","");
+if(k==="assistant")log.scrollTop=log.scrollHeight;
+}
+ask=function(q){openM("assistant");send(q)};
+document.addEventListener("click",e=>{
+const a=e.target.closest('a[href^="#"]');if(!a)return;
+const id=a.getAttribute("href").slice(1);
+if(PN[id]){e.preventDefault();openM(id);return}
+if(md.open&&a.closest("#md"))closeM();
+});
+new MutationObserver(()=>{$("lbarmsg").textContent=$("lmsg").textContent}).observe($("lmsg"),{childList:true,characterData:true,subtree:true});
+showQ();drawOpts();drawLang();drawCk();
+</script>
+</body>
+</html>
